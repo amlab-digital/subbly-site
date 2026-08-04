@@ -7,8 +7,9 @@ não precisa de servidor, build nem dependências.
 ## Arquivos
 
 - `index.html` — Landing page (PT/EN)
-- `termos.html` — Termos de Serviço (PT/EN)
-- `privacidade.html` — Política de Privacidade (PT/EN)
+- `terms/index.html` — Termos de Serviço (PT/EN) → `/terms/`
+- `privacy/index.html` — Política de Privacidade (PT/EN) → `/privacy/`
+- `robots.txt` / `sitemap.xml` — SEO para crawlers
 
 Os links entre as páginas e o seletor de idioma já funcionam.
 
