@@ -1,45 +1,46 @@
 # Subbly — Site público
 
-Páginas estáticas para a submissão do app na Shopify. Cada arquivo é
-autossuficiente (HTML único com CSS, fontes, imagens e lógica embutidos),
-não precisa de servidor, build nem dependências.
+Site estático de marketing do Subbly, app de assinaturas e recorrência
+nativo para Shopify. Hospedado no GitHub Pages com domínio próprio
+`trysubbly.com`. Cada página é um HTML único com CSS, fontes e lógica
+embutidos — sem servidor, build nem dependências.
 
-## Arquivos
+## Estrutura
 
-- `index.html` — Landing page (PT/EN)
-- `terms/index.html` — Termos de Serviço (PT/EN) → `/terms/`
-- `privacy/index.html` — Política de Privacidade (PT/EN) → `/privacy/`
-- `robots.txt` / `sitemap.xml` — SEO para crawlers
+- `index.html` — Landing page em português (PT-BR) → `/`
+- `en/index.html` — Landing page em inglês (EN) → `/en/`
+- `privacy/index.html` — Política de Privacidade (PT/EN com toggle) → `/privacy/`
+- `terms/index.html` — Termos de Serviço (PT/EN com toggle) → `/terms/`
+- `robots.txt` / `sitemap.xml` — SEO para crawlers (inclui hreflang PT/EN)
+- `images/favicons/` — favicons e `site.webmanifest` (PWA)
+- `CNAME` — domínio `trysubbly.com`
 
-Os links entre as páginas e o seletor de idioma já funcionam.
+## Navegação entre idiomas
+
+- Landing: seletor `PT`/`EN` no cabeçalho alterna entre `/` e `/en/`.
+- Legal: toggle `PT`/`EN` no cabeçalho alterna o conteúdo na mesma página
+  (ou acesse `/privacy/?lang=en` / `/terms/?lang=en` para abrir direto em inglês).
 
 ## Testar localmente
 
-Abra `index.html` no navegador (duplo clique). Só isso.
+```
+python3 -m http.server 8000
+# abra http://localhost:8000
+```
 
 ## Publicar com GitHub Pages
 
-1. Crie um repositório novo no GitHub (ex.: `subbly-site`).
-2. Arraste **todo o conteúdo desta pasta** para o repositório
-   (ou `git add . && git commit -m "site" && git push`).
-3. No GitHub: **Settings → Pages**.
-4. Em **Source**, escolha a branch `main` e a pasta `/ (root)`. Salve.
-5. Em ~1 minuto o site fica no ar em
-   `https://SEU-USUARIO.github.io/subbly-site/`.
+1. Suba todo o conteúdo desta pasta para o branch `main`:
+   `git add . && git commit -m "site" && git push`.
+2. No GitHub: **Settings → Pages → Source** → branch `main`, pasta `/ (root)`.
+3. O  
+### Domínio próprio
 
-### Domínio próprio (ex.: trysubbly.com)
-
-- Em **Settings → Pages → Custom domain**, informe seu domínio.
-- No seu provedor de DNS, aponte um registro `CNAME` para
-  `SEU-USUARIO.github.io` (ou registros `A` para os IPs do GitHub Pages).
-
-## Alternativas (arraste-e-solte, sem Git)
-
-- **Netlify Drop** (app.netlify.com/drop) — arraste a pasta, site no ar.
-- **Vercel** (vercel.com) — importe o repositório.
+- **Settings → Pages → Custom domain** → `trysubbly.com`.
+- DNS: registros `A` (ou `AAAA`) para os IPs do GitHub Pages, ou um `CNAME`.
+- O arquivo `CNAME` deste repositório já fixa o domínio.
 
 ## Observação
 
 Estas são as páginas **institucionais**. O aplicativo de assinaturas em si
-(cobrança em cartão, criação de planos, portal do assinante) é um software
-à parte, a ser desenvolvido por uma equipe de engenharia.
+(cobrança em cartão, planos, portal do assinante) é um software à parte.
