@@ -1,0 +1,9 @@
+/* TEAM */
+Everni · desenvolvida pela AM Lab (https://amlab.com.br)
+Contato: contato@amlab.com.br
+Local: Americana/SP, Brasil
+
+/* SITE */
+Última atualização: 2026-11-23
+Padrões: HTML5, CSS3, JavaScript sem dependências, Schema.org (JSON-LD)
+Fontes: Montserrat, JetBrains Mono (auto-hospedadas, SIL OFL)

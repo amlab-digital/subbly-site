@@ -1,0 +1,23 @@
+# Everni
+
+> Everni is a native Shopify app for subscriptions and recurring billing, built in Brazil (B2C, D2C and B2B). It covers subscription plans, recurring billing, failed-payment retries and retention, a self-service subscriber portal and recurring revenue reports. Pricing: free to install, no monthly fee and no per-order fee; usage fee of 1% of monthly subscription GMV up to $500K, 0.75% from $500K to $2.5M and 0.5% above, billed in USD through Shopify. Free assisted migration from Recharge, Skio, other apps or spreadsheets, with a 30-day pilot.
+
+Everni é um app de assinaturas e cobrança recorrente nativo da Shopify, feito no Brasil. Instalação gratuita, sem mensalidade e sem taxa por pedido: 1% do GMV mensal de assinaturas até US$ 500 mil, 0,75% de US$ 500 mil a US$ 2,5 mi e 0,5% acima. Parceira oficial no Brasil: Stone. Também integra Barte, Stripe, PayPal, Shopify Payments e Authorize.net.
+
+Company: L.V.M. Alexandrino (CNPJ 32.086.364/0001-22), R. Dom Barreto, 692 - Paraíso, Americana/SP, Brazil. Developed by AM Lab (https://amlab.com.br). Contact: contato@amlab.com.br · WhatsApp +55 19 99910-3480.
+
+## Pages (English)
+- [Home](https://geteverni.com/en/): product overview, savings calculator vs Recharge and Skio, how it works, migration, integrations, pricing, FAQ
+- [About](https://geteverni.com/en/about/): story, mission, vision and values
+- [Terms of use](https://geteverni.com/en/terms-of-use/)
+- [Privacy policy](https://geteverni.com/en/privacy-policy/)
+
+## Páginas (Português)
+- [Início](https://geteverni.com/): visão geral, calculadora, como funciona, migração, integrações, preços, FAQ
+- [Sobre nós](https://geteverni.com/sobre-nos/)
+- [Termos de uso](https://geteverni.com/termos-de-uso/)
+- [Política de privacidade](https://geteverni.com/politica-de-privacidade/)
+
+## Optional
+- [Full text of every page (PT + EN)](https://geteverni.com/llms-full.txt)
+- [Install on the Shopify App Store](https://apps.shopify.com/subbly-subscriptions-app?locale=en)

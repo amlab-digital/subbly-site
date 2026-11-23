@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="27 24.5 65 61.5" width="65" height="61.5" role="img" aria-label="Everni">
+<defs>
+  <linearGradient id="vt" x1="91" y1="25" x2="55" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5A2DB8"/><stop offset=".65" stop-color="#4A22A8"/><stop offset="1" stop-color="#2E1470"/></linearGradient>
+  <linearGradient id="vb" x1="30" y1="84" x2="48" y2="63" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5329B2"/><stop offset=".55" stop-color="#4420A0"/><stop offset="1" stop-color="#25105E"/></linearGradient>
+  <linearGradient id="gr" x1="28" y1="44" x2="91" y2="78" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B9D976"/><stop offset=".5" stop-color="#ABCB68"/><stop offset="1" stop-color="#9CBD5B"/></linearGradient></defs><path d="M40.00 51.00 L75.08 33.46 Q91.00 25.50 91.00 43.30 L91.00 66.00 Z" fill="url(#vt)"/><path d="M28.00 54.00 L28.00 71.40 Q28.00 84.80 40.12 79.09 L66.00 66.90 Z" fill="url(#vb)"/><path d="M28.00 51.79 Q28.00 42.00 37.45 44.55 L91.00 59.00 L91.00 69.90 Q91.00 80.00 81.33 77.08 L28.00 61.00 Z" fill="url(#gr)"/></svg>

@@ -1,0 +1,903 @@
+# Everni — full site content (PT-BR + EN)
+Source: https://geteverni.com · Last updated 2026-11-23
+
+
+---
+
+URL: https://geteverni.com/
+
+# Toda a sua recorrência. Uma só plataforma.
+
+O primeiro app de assinaturas da Shopify feito no Brasil · B2C · D2C · B2B Instalar na Shopify Ver quanto custa Integra com Stone Barte Stripe PayPal
+
+O problema
+
+## Você não perde assinante por falta de produto. Perde por atrito.
+- **Pausar não pode depender de e-mail** — Quando pular uma entrega exige falar com o atendimento e esperar dias, o assinante cancela no lugar de pausar.
+- **Cartão recusado vira cancelamento silencioso** — Sem retentativa e aviso automático, cada cartão vencido é um assinante perdido sem ninguém perceber.
+- **Taxa por pedido pune quem cresce** — Mensalidade, percentual e taxa por pedido somam de 2% a 3% do GMV de assinaturas nos apps líderes.
+
+A Everni resolve os três dentro da sua loja Shopify. Ver como funciona
+
+Para quem é
+
+## Marcas nativas digitais que vivem de recompra.
+
+Para DNVBs na Shopify que medem LTV, churn por coorte e payback de CAC, e querem um portal com a cara da marca e os dados do assinante sob o próprio controle.
+- **Clube de café** — Frequência ajustada ao consumo de cada assinante.
+- **Suplementos** — Kits mensais com preço de assinante.
+- **Cosméticos e refis** — Refil automático no ritmo de uso.
+- **Pet** — Ração e petiscos antes do pacote acabar.
+- **Fornecedores B2B** — Pedidos recorrentes de clientes que compram online.
+
+Quanto custa
+
+## Compare com Recharge e Skio.
+
+Mova o GMV mensal de assinaturas e compare o custo mês a mês. GMV mensal de assinaturas US$ 50.000 Ticket médio por pedido
+
+≈ 1.250 pedidos de assinatura por mês Sua economia por ano US$ 6.978 a 10.878
+
+54% a 64% a menos que Recharge e Skio nesse volume. Na Everni, você fica na faixa Start ( 1% ). Instalar na Shopify
+
+### Custo mensal estimado
+- Recharge Plus — US$ 499 + 1,34% + 19¢ por pedido US$ 1.406/mês
+- Skio — US$ 599 + 1% + 20¢ por pedido US$ 1.349/mês
+- Recharge Standard — US$ 99 + 1,49% + 19¢ por pedido US$ 1.082/mês
+- Everni — Faixa Start: 1% do GMV, sem mensalidade US$ 500/mês
+
+Estimativa com preços públicos de tabela de Recharge e Skio em nov/2026 (mensalidade + % do GMV + taxa por pedido); planos sob negociação podem variar. Recharge e Skio são marcas de seus respectivos donos.
+
+Como funciona
+
+## Tudo o que a assinatura precisa, em cinco partes.
+
+### Planos de assinatura
+
+Crie planos por produto, frequência e desconto. O cliente escolhe assinar na página do produto e finaliza a compra no checkout da sua loja.
+
+### Cobrança recorrente
+
+A cada ciclo, a Everni gera o pedido e cobra o assinante automaticamente. Próximas cobranças e renovações ficam em uma lista só.
+
+### Retenção
+
+Quando um pagamento não é aprovado, a Everni tenta de novo e avisa o cliente. Pausa, pulo de entrega e troca de produto oferecem alternativas antes do cancelamento.
+
+### Portal do assinante
+
+No portal, o assinante pula uma entrega, pausa, troca o produto ou atualiza o cartão, sem precisar falar com o atendimento.
+
+### Relatórios
+
+Receita recorrente (MRR), receita retida e retenção por coorte, sempre com unidade e período em cada número.
+
+Da base ao cume
+
+## Receita recorrente se constrói como uma escalada.
+
+Cada etapa da rota é uma parte da Everni trabalhando pela sua recorrência. 01 · Base · 5.364 m Acampamento base Instale pela App Store e traga seus assinantes de onde estiverem. A migração fica por nossa conta.
+
+Migração
+
+## Troque de app sem perder um assinante.
+
+Do levantamento à primeira cobrança, o trabalho fica com a gente.
+- **Levantamento** — Mapeamos assinantes, planos, preços e próximas datas de cobrança no app atual: Recharge, Skio, outro app ou planilha.
+- **Importação e conferência** — Nosso time importa tudo para a Everni e confere assinante por assinante antes da virada. Seu time não precisa fazer nada.
+- **Virada sem cobrança duplicada** — Na data combinada, a Everni assume as cobranças e seu time acompanha tudo pelo painel. Instalar na Shopify Prefere conversar antes? Fale com o time
+
+Integrações de pagamento
+
+## Cobre pelo provedor que a sua operação já usa.
+
+Na Shopify, a Everni usa a recorrência nativa da plataforma. No Brasil, cobra pela Stone, nossa parceira oficial, e pela Barte.
+- Stone Parceira oficial · Brasil
+- Barte Disponível · Brasil
+- Stripe Nativo da Shopify
+- PayPal Nativo da Shopify
+
++18 provedores a caminho
+
+### Brasil
+- Mercado Pago
+- PagBank (PagSeguro)
+- Cielo
+- Getnet
+- Adyen
+- Appmax
+- Vindi
+- Asaas
+- PagBrasil
+- dLocal
+- Divibank
+- SaqPay
+
+### Mundo
+- Checkout.com
+- Mollie
+- Opayo by Elavon
+- AltaPay
+- Payrexx
+- Computop
+
+Usa outro provedor de pagamento disponível na Shopify? Fale com a gente e coloque sua loja na fila de prioridade.
+
+Integrações a caminho estão em desenvolvimento ou planejadas, sem data garantida. As marcas citadas pertencem aos seus respectivos donos.
+
+Preços
+
+## Uma taxa só, que cai quando você cresce.
+
+Você paga um percentual do GMV mensal de assinaturas. A faixa vale para todo o volume do mês.
+- Start 1% até US$ 500 mil/mês em assinaturas
+- Growth 0,75% de US$ 500 mil a US$ 2,5 mi/mês
+- Scale 0,5% acima de US$ 2,5 mi/mês
+- Instalação gratuita
+- Sem mensalidade e sem taxa por pedido
+- Migração assistida e gratuita
+- Cobrança em USD pela Shopify, na sua fatura da loja
+
+Exemplo: com US$ 150 mil/mês em assinaturas, você fica na faixa Start e paga US$ 1.500/mês. Com US$ 1 mi/mês, fica na Growth e paga US$ 7.500/mês.
+
+Operação grande ou B2B? Temos serviços gerenciados com onboarding dedicado, gerente de sucesso e SLA, em contrato à parte. Agendar demo
+
+Comece agora
+
+## Instale hoje. A migração fica por nossa conta.
+
+Piloto de 30 dias com migração gratuita. Instalar na Shopify
+
+Dúvidas
+
+## Perguntas frequentes
+
+A Everni funciona dentro da Shopify?
+
+Sim. Planos, cobrança e pagamentos rodam de forma nativa na Shopify, e seus assinantes compram pelo checkout da sua loja.
+
+Como funciona o piloto de 30 dias?
+
+Você instala a Everni, configura os planos e traz seus assinantes ativos. Nos primeiros 30 dias, a migração não tem custo e nosso time acompanha a operação com você.
+
+Consigo trazer assinantes de outro app?
+
+Sim. Migramos assinantes da Recharge, da Skio, de outros apps ou de planilhas. Quando os dados de pagamento já estão na Shopify, os assinantes seguem sem recadastrar o cartão; nos outros casos, cada assinante recebe um link para atualizar.
+
+O que acontece quando um pagamento não é aprovado?
+
+A Everni tenta a cobrança de novo em datas programadas e avisa o assinante com um link para atualizar o cartão. Pausa, pulo de entrega e troca de produto ficam disponíveis no portal antes do cancelamento.
+
+Quanto custa a Everni?
+
+1% do GMV mensal de assinaturas até US$ 500 mil, 0,75% de US$ 500 mil a US$ 2,5 mi e 0,5% acima disso. Sem mensalidade e sem taxa por pedido; a cobrança é em USD, pela Shopify.
+
+A Everni funciona com provedores de pagamento brasileiros?
+
+Sim. A Stone, nossa parceira oficial, já está disponível na Everni. Mercado Pago, PagBank, Cielo, Getnet, Barte e outros provedores disponíveis na Shopify estão na fila. Fale com a gente para priorizar o seu.
+
+## Fale com a Everni
+
+O time responde dúvidas sobre planos, migração e integração com a sua loja. E-mail WhatsApp
+
+## Agende uma demo
+
+Veja a Everni funcionando com os produtos da sua loja. Agendar
+
+## Novidades da Everni
+
+---
+
+URL: https://geteverni.com/sobre-nos/
+
+Sobre a Everni
+
+# Nascemos em 2026 para chegar ao topo.
+
+A Everni foi criada para ser a maior e melhor plataforma de assinaturas e recorrência do mundo. Toda escalada começa no acampamento base. O nosso fica dentro da Shopify.
+
+Nossa história
+
+## Assinatura não é cobrança. É relação.
+
+A Everni nasceu de uma constatação: quem vende por assinatura não vende só um produto, mantém uma relação. A cada ciclo, o cliente decide se continua. E essa decisão depende de detalhes que se repetem todo mês: o cartão que vence, a entrega que precisa mudar de data, a vontade de pausar em vez de cancelar.
+
+Em muitas lojas, a recorrência fica espalhada entre apps, planilhas e atendimento manual. Decidimos reunir tudo em um só lugar, nativo da Shopify: planos, cobrança recorrente, recuperação de pagamentos, portal do assinante e relatórios.
+
+Escolhemos a montanha como símbolo porque receita recorrente se constrói como uma escalada: por etapas, com preparo e sem atalhos. Cada ciclo mantido é um avanço que a marca não precisa reconquistar.
+
+## O que nos move
+- **Missão** — Fazer cada assinatura durar mais ciclos. — Damos às marcas o necessário para cobrar, entregar e ajustar sem atrito, para que o cliente decida continuar.
+- **Visão** — Ser a maior e melhor plataforma de assinaturas e recorrência do mundo. — Começamos pela Shopify e pelo Brasil, e subimos um acampamento de cada vez.
+- **Valores** — Escalabilidade, continuidade e parceria. — Crescer sem perder o controle, manter relações por mais ciclos e caminhar junto com cada marca.
+
+A escalada
+
+## Do acampamento base ao cume.
+- 2026 **Acampamento base** — A Everni nasce nativa da Shopify, com planos, cobrança recorrente, recuperação de pagamentos, portal do assinante e relatórios.
+- Agora **A subida** — As primeiras marcas entram pelo piloto de 30 dias, sem taxa de migração. Cada operação real ajusta o produto e define o próximo passo.
+- Destino **O cume** — Ser a maior e melhor plataforma para controlar assinaturas e recorrências do mundo.
+
+Quem faz
+
+## Feita por quem vive comércio digital.
+
+A Everni é desenvolvida pela AM Lab, parceira Shopify que projeta, sustenta e faz crescer operações de venda online complexas. É essa experiência, de dentro das operações, que orienta cada decisão do produto. Conheça a AM Lab ↗
+
+Comece pelo piloto
+
+## Venha subir com a gente.
+
+Piloto de 30 dias, sem taxa de migração. Instale a Everni, configure os planos e traga seus assinantes ativos. Instalar na Shopify Falar com o time
+
+---
+
+URL: https://geteverni.com/termos-de-uso/
+
+Legal
+
+# Termos de Uso
+
+As regras para instalar e usar a Everni na sua loja Shopify.
+
+Última atualização: 23 de novembro de 2026
+
+Nesta página
+
+Estes Termos de Uso regem a instalação e o uso da Everni, aplicativo de assinaturas para lojas Shopify. Leia com atenção: ao instalar ou usar a Everni, você concorda com eles.
+
+A Everni é operada por L.V.M. Alexandrino, inscrita no CNPJ sob o nº 32.086.364/0001-22, com sede na Rua Dom Barreto, 692, Paraíso, Americana/SP, CEP 13465-720.
+
+## Aceitação dos Termos
+
+Ao instalar, acessar ou usar a Everni, você declara que leu, entendeu e aceita estes Termos e a Política de Privacidade , que faz parte deles. Se não concordar, não instale a Everni ou, se já tiver instalado, desinstale o aplicativo.
+
+Quem usa a Everni em nome de uma empresa declara ter poderes para obrigá-la a estes Termos.
+
+## Descrição do Serviço
+
+A Everni é um aplicativo nativo da Shopify para gestão de assinaturas e cobrança recorrente. Com ela, o comerciante vende produtos por assinatura e oferece aos clientes um portal de autoatendimento.
+
+Podemos alterar, suspender ou descontinuar funcionalidades, com aviso prévio razoável quando aplicável.
+
+## Cadastro e Conta
+
+O acesso à Everni é feito pela sua conta Shopify. Você deve manter suas credenciais em sigilo e responde por toda atividade realizada na sua conta.
+
+As informações fornecidas na instalação e durante o uso devem ser verdadeiras, precisas e atualizadas.
+
+## Planos, Preços e Pagamento
+
+As tarifas da Everni são apresentadas na instalação e cobradas pela Shopify Billing API, de acordo com o plano escolhido.
+
+As taxas de processamento dos pagamentos dos seus clientes são definidas pelos gateways de pagamento e não são receita da Everni, salvo indicação expressa.
+
+Os valores pagos não são reembolsáveis, exceto quando a lei aplicável exigir.
+
+## Obrigações do Comerciante
+
+Você é o único responsável pelos produtos e serviços vendidos por assinatura, pelas entregas, pela exatidão de descrições e preços e pelo atendimento aos seus clientes.
+
+Também cabe a você cumprir a legislação aplicável, incluindo as normas de defesa do consumidor, tributárias e de proteção de dados pessoais (LGPD). É proibido usar a Everni para atividades fraudulentas ou ilícitas, ou em desacordo com as regras da Shopify.
+
+## Uso Aceitável
+
+Não é permitido:
+- fazer engenharia reversa do aplicativo;
+- revender ou sublicenciar o serviço sem autorização;
+- sobrecarregar intencionalmente a infraestrutura da Everni;
+- contornar limites técnicos ou mecanismos de segurança.
+
+Podemos suspender contas que violem esta seção, com ou sem aviso prévio, conforme a gravidade da violação.
+
+## Propriedade Intelectual
+
+O software, a marca, os logotipos, o design e a documentação da Everni pertencem à Everni ou a seus licenciadores e são protegidos pela legislação de propriedade intelectual.
+
+Você recebe uma licença de uso limitada, não exclusiva e intransferível, válida enquanto durar a relação contratual. Nenhum outro direito é concedido.
+
+## Dados e Privacidade
+
+O tratamento de dados pessoais segue a Política de Privacidade da Everni, que integra estes Termos.
+
+Em relação aos dados dos seus clientes finais, a Everni atua como operadora e você, comerciante, como controlador. Cabe a você garantir as bases legais e obter os consentimentos necessários para esse tratamento.
+
+## Integrações de Terceiros
+
+A Everni pode se conectar a serviços de terceiros, como a própria Shopify, gateways de pagamento e ferramentas de e-mail.
+
+Não respondemos por falhas, políticas ou indisponibilidade desses serviços. O uso de cada integração também pode depender dos termos do respectivo fornecedor.
+
+## Limitação de Responsabilidade
+
+A Everni é fornecida no estado em que se encontra. Na máxima extensão permitida pela lei, não respondemos por lucros cessantes, perda de dados ou danos indiretos decorrentes do uso ou da impossibilidade de uso do aplicativo.
+
+A responsabilidade total da Everni fica limitada ao valor pago por você à Everni nos 12 meses anteriores ao fato que originou a reclamação.
+
+## Vigência e Rescisão
+
+Estes Termos valem enquanto a Everni estiver instalada na sua loja. Você pode encerrá-los a qualquer momento, desinstalando o aplicativo.
+
+Podemos suspender ou encerrar seu acesso em caso de violação destes Termos. Após o encerramento, os dados poderão ser excluídos conforme a Política de Privacidade .
+
+## Alterações dos Termos
+
+Podemos atualizar estes Termos periodicamente. Mudanças relevantes serão comunicadas com antecedência razoável, por e-mail ou dentro do aplicativo.
+
+Continuar usando a Everni depois que as alterações entrarem em vigor significa aceitá-las.
+
+## Lei Aplicável e Foro
+
+Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da comarca de Americana/SP para resolver qualquer controvérsia, com renúncia a qualquer outro, por mais privilegiado que seja.
+
+Dúvidas sobre estes Termos?
+
+Escreva para o time jurídico: contato@amlab.com.br Ler a Política de Privacidade
+
+---
+
+URL: https://geteverni.com/politica-de-privacidade/
+
+Legal
+
+# Política de Privacidade
+
+Como a Everni trata os dados pessoais de comerciantes, de seus clientes e de visitantes deste site, conforme a LGPD.
+
+Última atualização: 23 de novembro de 2026
+
+Nesta página
+
+Esta Política explica quais dados pessoais a Everni trata, para quê, com quem compartilha e como você exerce seus direitos, de acordo com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, LGPD). Ela integra os Termos de Uso da Everni.
+
+## Quem Somos
+
+A Everni é um aplicativo de gestão de assinaturas para lojas Shopify, operado por L.V.M. Alexandrino, inscrita no CNPJ sob o nº 32.086.364/0001-22, com sede na Rua Dom Barreto, 692, Paraíso, Americana/SP, CEP 13465-720.
+
+Em relação aos dados dos clientes finais das lojas, a Everni atua como operadora, e o comerciante é o controlador. Já os dados de cadastro do próprio comerciante e os dados de visitantes deste site são tratados pela Everni como controladora.
+
+## Dados que Coletamos
+
+Dados do comerciante: Nome, e-mail, informações da loja Shopify e dados de faturamento necessários à prestação do serviço.
+
+Dados dos clientes finais: Nome, e-mail, endereço de entrega, histórico de pedidos e assinaturas e as informações necessárias à cobrança recorrente. Não armazenamos números completos de cartão: eles são processados diretamente pelos gateways de pagamento.
+
+Dados técnicos: Registros de acesso, endereço IP, identificadores de dispositivo e dados de uso, usados para segurança e melhoria do serviço.
+
+Visitantes do site: Para exibir o site no idioma certo, o navegador consulta um serviço de geolocalização por IP (api.country.is ou, como reserva, ipapi.co) que devolve apenas o país. Guardamos no seu navegador (armazenamento local, não cookies) o código do país por até 30 dias e o idioma que você escolher. Esses dados não são enviados à Everni. Se você assinar as novidades, tratamos o e-mail informado.
+
+## Como Usamos os Dados
+
+Usamos os dados para:
+- operar as assinaturas e a cobrança recorrente;
+- disponibilizar o portal de autoatendimento do assinante;
+- gerar relatórios e análises para o comerciante;
+- prestar suporte;
+- garantir a segurança e prevenir fraudes;
+- exibir este site no idioma adequado ao país do visitante;
+- enviar novidades a quem se inscreveu, com opção de cancelar a qualquer momento;
+- cumprir obrigações legais e regulatórias.
+
+Não vendemos dados pessoais a terceiros.
+
+## Bases Legais (LGPD)
+
+Tratamos dados pessoais com base na execução de contrato, no cumprimento de obrigação legal ou regulatória, no legítimo interesse (para segurança, melhoria do serviço e escolha do idioma do site) e no consentimento, quando exigido (como na inscrição para receber novidades).
+
+Quando a base aplicável for o consentimento dos clientes finais, cabe ao comerciante obtê-lo.
+
+## Compartilhamento
+
+Compartilhamos dados apenas na medida necessária para operar o serviço, com:
+- a Shopify;
+- gateways e processadores de pagamento;
+- provedores de infraestrutura em nuvem e de hospedagem do site (GitHub Pages);
+- serviços de geolocalização por IP usados pelo site (api.country.is e ipapi.co), que recebem o endereço IP do visitante;
+- ferramentas de comunicação e de formulários.
+
+Esses subprocessadores assumem obrigações contratuais de proteção de dados compatíveis com esta Política.
+
+## Transferência Internacional
+
+Parte dos servidores e alguns subprocessadores, incluindo a hospedagem do site e os serviços de geolocalização, podem estar fora do Brasil. Nesses casos, adotamos as salvaguardas previstas na LGPD, como cláusulas contratuais padrão e garantias de nível adequado de proteção.
+
+## Retenção de Dados
+
+Mantemos os dados pelo tempo necessário para cumprir as finalidades desta Política e as obrigações legais.
+
+Após a desinstalação do aplicativo, os dados do comerciante e de seus clientes são excluídos ou anonimizados em prazo razoável, ressalvada a retenção exigida por lei. Também atendemos às solicitações de exclusão de dados de clientes e de lojas recebidas pela Shopify, conforme as exigências da plataforma.
+
+No site, o país detectado fica no seu navegador por até 30 dias; você pode apagá-lo a qualquer momento limpando os dados do site no navegador.
+
+## Segurança
+
+Adotamos medidas técnicas e organizacionais para proteger os dados, como criptografia em trânsito e em repouso, controle de acesso, monitoramento e auditorias. Este site é servido apenas por HTTPS.
+
+Nenhum sistema é totalmente imune a falhas, mas tratamos os riscos de forma contínua.
+
+## Seus Direitos
+
+Nos termos da LGPD, você pode solicitar:
+- confirmação da existência de tratamento e acesso aos dados;
+- correção de dados incompletos, inexatos ou desatualizados;
+- anonimização, bloqueio ou eliminação de dados;
+- portabilidade dos dados;
+- informações sobre com quem os dados são compartilhados;
+- revogação do consentimento.
+
+Para exercer seus direitos, fale com o nosso encarregado (seção 12). Clientes finais das lojas devem procurar primeiro o comerciante, que é o controlador dos seus dados; a Everni apoia o comerciante sempre que necessário. Respondemos dentro dos prazos legais.
+
+## Cookies, Armazenamento Local e Idioma
+
+Este site não usa cookies, ferramentas de análise nem publicidade. Ele usa apenas o armazenamento local do navegador para lembrar o idioma escolhido e o país detectado, como descrito na seção 2. Para escolher o idioma manualmente, use o seletor PT/EN no topo da página.
+
+O painel administrativo da Everni usa apenas cookies essenciais, necessários para autenticação e funcionamento. O widget exibido na loja segue as configurações de cookies da própria loja.
+
+## Alterações desta Política
+
+Podemos atualizar esta Política periodicamente. Mudanças relevantes serão comunicadas por e-mail ou dentro do aplicativo.
+
+A data de última atualização, no topo desta página, indica a versão em vigor.
+
+## Encarregado de Dados (DPO)
+
+Encarregado: Gustavo Henrique Gottardi Antunes
+
+Contato: contato@amlab.com.br
+
+Fale com o encarregado sobre qualquer questão de privacidade. Respondemos dentro dos prazos legais.
+
+Dúvidas sobre privacidade?
+
+Escreva para o encarregado: contato@amlab.com.br Ler os Termos de Uso
+
+---
+
+URL: https://geteverni.com/en/
+
+# Every subscription. One platform.
+
+Native subscriptions for Shopify · B2C · D2C · B2B Install on Shopify See your savings Works with Stripe PayPal Shopify Payments Authorize.net
+
+The problem
+
+## You don’t lose subscribers for lack of product. You lose them to friction.
+- **Pausing shouldn’t take an email** — When skipping a delivery means contacting support and waiting days, subscribers cancel instead of pausing.
+- **Declined cards become silent churn** — Without automatic retries and reminders, every expired card is a subscriber lost without anyone noticing.
+- **Per-order fees punish growth** — Monthly fee, percentage and per-order fees add up to 2% to 3% of subscription GMV on the leading apps.
+
+Everni fixes all three inside your Shopify store. See how it works
+
+Savings
+
+## How much you save by leaving Recharge or Skio.
+
+Slide your monthly subscription GMV and compare the cost month by month. Monthly subscription GMV $50,000 Average order value
+
+≈ 1,250 subscription orders per month Your yearly savings $6,978 to $10,878
+
+54% to 64% less than Recharge and Skio at this volume. On Everni, you are on the Start tier ( 1% ). Install on Shopify
+
+### Estimated monthly cost
+- Recharge Plus — $499 + 1.34% + 19¢ per order $1,406/mo
+- Skio — $599 + 1% + 20¢ per order $1,349/mo
+- Recharge Standard — $99 + 1.49% + 19¢ per order $1,082/mo
+- Everni — Start tier: 1% of GMV, no monthly fee $500/mo
+
+Estimate based on Recharge and Skio public list prices as of Nov 2026 (monthly fee + % of GMV + per-order fee); negotiated plans may differ. Recharge and Skio are trademarks of their respective owners.
+
+How it works
+
+## Everything a subscription needs, in five parts.
+
+### Subscription plans
+
+Create plans by product, frequency and discount. Customers choose to subscribe on the product page and complete the purchase in your store’s checkout.
+
+### Recurring billing
+
+Every cycle, Everni creates the order and charges the subscriber automatically. Upcoming charges and renewals live in a single list.
+
+### Retention
+
+When a payment is declined, Everni retries and notifies the customer. Pause, skip and product swap offer alternatives before cancellation.
+
+### Subscriber portal
+
+In the portal, subscribers skip a delivery, pause, swap products or update their card without contacting support.
+
+### Reports
+
+Monthly recurring revenue (MRR), retained revenue and cohort retention, with unit and period on every number.
+
+From base camp to summit
+
+## Recurring revenue is built like a climb.
+
+Every stop on the route is a part of Everni working for your recurring revenue. 01 · Base camp · 5,364 m Base camp Install from the App Store and bring your subscribers from wherever they are. Migration is on us.
+
+Migration
+
+## Switch apps without losing a subscriber.
+
+From audit to first charge, we do the work.
+- **Audit** — We map subscribers, plans, prices and upcoming billing dates in your current app: Recharge, Skio, another app or a spreadsheet.
+- **Import and review** — Our team imports everything into Everni and checks every subscriber before the switch. Your team doesn’t lift a finger.
+- **Switch with no double charges** — On the agreed date, Everni takes over billing and your team follows everything in the dashboard. Install on Shopify Rather talk first? Contact the team
+
+Payment integrations
+
+## Bill through the provider your business already uses.
+
+On Shopify, Everni runs on Shopify native subscriptions. In Brazil, it bills through Stone, our official partner, and Barte.
+- Stripe Shopify native
+- PayPal Shopify native
+- Shopify Payments Shopify native
+- Authorize.net Shopify native
+
++18 more providers on the way
+
+### Brazil
+- Mercado Pago
+- PagBank (PagSeguro)
+- Cielo
+- Getnet
+- Adyen
+- Appmax
+- Vindi
+- Asaas
+- PagBrasil
+- dLocal
+- Divibank
+- SaqPay
+
+### Worldwide
+- Checkout.com
+- Mollie
+- Opayo by Elavon
+- AltaPay
+- Payrexx
+- Computop
+
+Using another payment provider available on Shopify? Talk to us and put your store on the priority list.
+
+Upcoming integrations are in development or planned, with no guaranteed date. All trademarks belong to their respective owners.
+
+Pricing
+
+## One fee that drops as you grow.
+
+You pay a percentage of monthly subscription GMV. The tier applies to the month’s entire volume.
+- Start 1% up to $500K/mo in subscriptions
+- Growth 0.75% $500K to $2.5M/mo
+- Scale 0.5% above $2.5M/mo
+- Free to install
+- No monthly fee, no per-order fee
+- Free assisted migration
+- Billed in USD by Shopify, on your store invoice
+
+Example: with $150K/mo in subscriptions you’re on Start and pay $1,500/mo. With $1M/mo you’re on Growth and pay $7,500/mo.
+
+Large or B2B operation? We offer managed services with dedicated onboarding, a success manager and an SLA, under a separate contract. Book a demo
+
+Who it’s for
+
+## Digitally native brands built on repeat purchases.
+
+For DNVBs on Shopify that track LTV, cohort churn and CAC payback, and want an on-brand portal with subscriber data under their own control.
+- **Coffee club** — Frequency matched to each subscriber’s consumption.
+- **Supplements** — Monthly kits at subscriber pricing.
+- **Beauty and refills** — Automatic refills at the pace of use.
+- **Pet** — Food and treats before the bag runs out.
+- **B2B suppliers** — Recurring orders from customers who buy online.
+
+FAQ
+
+## Frequently asked questions
+
+Does Everni run inside Shopify?
+
+Yes. Plans, billing and payments run natively on Shopify, and your subscribers buy through your store’s checkout.
+
+How does the 30-day pilot work?
+
+You install Everni, set up your plans and bring your active subscribers. For the first 30 days, migration is free and our team runs the operation alongside you.
+
+Can I bring subscribers from another app?
+
+Yes. We migrate subscribers from Recharge, Skio, other apps or spreadsheets. When payment details are already stored in Shopify, subscribers carry on without re-entering their card; otherwise, each subscriber gets a link to update it.
+
+What happens when a payment is declined?
+
+Everni retries the charge on scheduled dates and notifies the subscriber with a link to update their card. Pause, skip and product swap are available in the portal before cancellation.
+
+How much does Everni cost?
+
+1% of monthly subscription GMV up to $500K, 0.75% from $500K to $2.5M and 0.5% above that. No monthly fee and no per-order fee; billed in USD through Shopify.
+
+Does Everni work with Brazilian payment providers?
+
+Yes. Stone, our official partner, is already available on Everni. Mercado Pago, PagBank, Cielo, Getnet, Barte and other providers available on Shopify are in the queue. Talk to us to prioritize yours.
+
+Get started
+
+## Install today. Migration is on us.
+
+30-day pilot with free migration. Install on Shopify
+
+## Talk to Everni
+
+Our team answers questions about plans, migration and integrating your store. Email WhatsApp
+
+## Book a demo
+
+See Everni running with your store’s products. Book
+
+## Everni news
+
+---
+
+URL: https://geteverni.com/en/about/
+
+About Everni
+
+# Founded in 2026 to reach the summit.
+
+Everni was created to become the world’s largest and best subscription and recurring revenue platform. Every climb starts at base camp. Ours is inside Shopify.
+
+Our story
+
+## A subscription isn’t a charge. It’s a relationship.
+
+Everni was born from one observation: brands that sell subscriptions don’t just sell a product, they keep a relationship. Every cycle, the customer decides whether to stay. And that decision depends on details that repeat every month: the card that expires, the delivery that needs a new date, the wish to pause instead of cancel.
+
+In many stores, recurring revenue is scattered across apps, spreadsheets and manual support. We decided to bring it all together in one place, native to Shopify: plans, recurring billing, payment recovery, subscriber portal and reports.
+
+We chose the mountain as our symbol because recurring revenue is built like a climb: in stages, with preparation and no shortcuts. Every cycle kept is progress the brand doesn’t have to win back.
+
+## What drives us
+- **Mission** — Make every subscription last more cycles. — We give brands what they need to bill, deliver and adjust without friction, so customers choose to stay.
+- **Vision** — Become the world’s largest and best subscription and recurring revenue platform. — We start with Shopify and Brazil, and climb one camp at a time.
+- **Values** — Scalability, continuity and partnership. — Growing without losing control, keeping relationships for more cycles and walking alongside every brand.
+
+The climb
+
+## From base camp to summit.
+- 2026 **Base camp** — Everni is born native to Shopify, with plans, recurring billing, payment recovery, subscriber portal and reports.
+- Now **The ascent** — The first brands join through the 30-day pilot, with no migration fee. Every real operation shapes the product and sets the next step.
+- Destination **The summit** — Become the world’s largest and best platform to manage subscriptions and recurring revenue.
+
+Who builds it
+
+## Built by people who live digital commerce.
+
+Everni is developed by AM Lab, a Shopify partner that designs, runs and grows complex online sales operations. That hands-on experience, from inside real operations, guides every product decision. Meet AM Lab ↗
+
+Start with the pilot
+
+## Come climb with us.
+
+30-day pilot, no migration fee. Install Everni, set up your plans and bring your active subscribers. Install on Shopify Talk to the team
+
+---
+
+URL: https://geteverni.com/en/terms-of-use/
+
+Legal
+
+# Terms of Use
+
+The rules for installing and using Everni in your Shopify store.
+
+Last updated: November 23, 2026
+
+On this page
+
+These Terms of Use govern the installation and use of Everni, a subscriptions app for Shopify stores. Please read them carefully: by installing or using Everni, you agree to them.
+
+Everni is operated by L.V.M. Alexandrino, registered under Brazilian CNPJ no. 32.086.364/0001-22, headquartered at Rua Dom Barreto, 692, Paraíso, Americana, São Paulo, Brazil, ZIP 13465-720.
+
+## Acceptance of the Terms
+
+By installing, accessing or using Everni, you confirm that you have read, understood and accept these Terms and the Privacy Policy , which forms part of them. If you do not agree, do not install Everni or, if you have already installed it, uninstall the app.
+
+Anyone using Everni on behalf of a company represents that they have authority to bind it to these Terms.
+
+## Description of the Service
+
+Everni is a native Shopify app for subscription management and recurring billing. It lets merchants sell products by subscription and offer customers a self-service portal.
+
+We may change, suspend or discontinue features, with reasonable prior notice where applicable.
+
+## Registration and Account
+
+Everni is accessed through your Shopify account. You must keep your credentials confidential and are responsible for all activity carried out in your account.
+
+The information provided at installation and during use must be true, accurate and up to date.
+
+## Plans, Pricing and Payment
+
+Everni’s fees are shown at installation and charged through the Shopify Billing API, according to the selected plan.
+
+Processing fees for your customers’ payments are set by the payment gateways and are not Everni revenue, unless expressly stated.
+
+Amounts paid are non-refundable, except where required by applicable law.
+
+## Merchant Obligations
+
+You are solely responsible for the products and services sold by subscription, for deliveries, for the accuracy of descriptions and prices, and for supporting your customers.
+
+You must also comply with applicable law, including consumer protection, tax and personal data protection rules (such as Brazil’s LGPD). Using Everni for fraudulent or unlawful activities, or in breach of Shopify’s rules, is prohibited.
+
+## Acceptable Use
+
+You may not:
+- reverse engineer the app;
+- resell or sublicense the service without authorization;
+- intentionally overload Everni’s infrastructure;
+- circumvent technical limits or security mechanisms.
+
+We may suspend accounts that violate this section, with or without prior notice, depending on the severity of the violation.
+
+## Intellectual Property
+
+Everni’s software, brand, logos, design and documentation belong to Everni or its licensors and are protected by intellectual property law.
+
+You receive a limited, non-exclusive and non-transferable license to use the app for as long as the contractual relationship lasts. No other rights are granted.
+
+## Data and Privacy
+
+Personal data is processed in accordance with Everni’s Privacy Policy , which forms part of these Terms.
+
+Regarding your end customers’ data, Everni acts as processor and you, the merchant, act as controller. You are responsible for ensuring the legal bases and obtaining any consents required for that processing.
+
+## Third-Party Integrations
+
+Everni may connect to third-party services, such as Shopify itself, payment gateways and email tools.
+
+We are not responsible for failures, policies or unavailability of these services. Each integration may also be subject to the respective provider’s terms.
+
+## Limitation of Liability
+
+Everni is provided as is. To the maximum extent permitted by law, we are not liable for lost profits, data loss or indirect damages arising from the use of, or inability to use, the app.
+
+Everni’s total liability is limited to the amount you paid Everni in the 12 months preceding the event giving rise to the claim.
+
+## Term and Termination
+
+These Terms apply while Everni is installed in your store. You may end them at any time by uninstalling the app.
+
+We may suspend or terminate your access if you breach these Terms. After termination, data may be deleted in accordance with the Privacy Policy .
+
+## Changes to the Terms
+
+We may update these Terms from time to time. Material changes will be communicated with reasonable notice, by email or within the app.
+
+Continuing to use Everni after the changes take effect means you accept them.
+
+## Governing Law and Jurisdiction
+
+These Terms are governed by the laws of the Federative Republic of Brazil. The courts of the district of Americana, São Paulo, Brazil, are elected to settle any dispute, to the exclusion of any other, however privileged.
+
+This English version is provided for convenience. In case of conflict, the Portuguese version prevails.
+
+Questions about these Terms?
+
+Write to our legal team: contato@amlab.com.br Read the Privacy Policy
+
+---
+
+URL: https://geteverni.com/en/privacy-policy/
+
+Legal
+
+# Privacy Policy
+
+How Everni processes the personal data of merchants, their customers and visitors to this website, under Brazil’s LGPD.
+
+Last updated: November 23, 2026
+
+On this page
+
+This Policy explains which personal data Everni processes, for what purposes, with whom it is shared and how you can exercise your rights, in accordance with Brazil’s General Personal Data Protection Law (Law No. 13,709/2018, LGPD). It forms part of Everni’s Terms of Use .
+
+## Who We Are
+
+Everni is a subscription management app for Shopify stores, operated by L.V.M. Alexandrino, registered under Brazilian CNPJ no. 32.086.364/0001-22, headquartered at Rua Dom Barreto, 692, Paraíso, Americana, São Paulo, Brazil, ZIP 13465-720.
+
+Regarding the data of the stores’ end customers, Everni acts as processor and the merchant is the controller. Merchants’ own account data and the data of visitors to this website are processed by Everni as controller.
+
+## Data We Collect
+
+Merchant data: Name, email, Shopify store information and billing data required to provide the service.
+
+End-customer data: Name, email, shipping address, order and subscription history, and the information required for recurring billing. We do not store full card numbers: they are processed directly by the payment gateways.
+
+Technical data: Access logs, IP address, device identifiers and usage data, used for security and service improvement.
+
+Website visitors: To show this website in the right language, your browser queries an IP geolocation service (api.country.is or, as a fallback, ipapi.co) that returns only your country. We store in your browser (local storage, not cookies) the country code for up to 30 days and the language you choose. This data is not sent to Everni. If you sign up for updates, we process the email you provide.
+
+## How We Use Data
+
+We use data to:
+- operate subscriptions and recurring billing;
+- provide the subscriber self-service portal;
+- generate reports and analytics for the merchant;
+- provide support;
+- ensure security and prevent fraud;
+- show this website in the language suited to the visitor’s country;
+- send updates to people who signed up, with the option to unsubscribe at any time;
+- comply with legal and regulatory obligations.
+
+We do not sell personal data to third parties.
+
+## Legal Bases (LGPD)
+
+We process personal data based on performance of a contract, compliance with legal or regulatory obligations, legitimate interest (for security, service improvement and choosing the website language) and consent where required (such as signing up for updates).
+
+Where the applicable basis is the end customers’ consent, the merchant is responsible for obtaining it.
+
+## Sharing
+
+We share data only as needed to operate the service, with:
+- Shopify;
+- payment gateways and processors;
+- cloud infrastructure and website hosting providers (GitHub Pages);
+- IP geolocation services used by the website (api.country.is and ipapi.co), which receive the visitor’s IP address;
+- communication and form tools.
+
+These subprocessors take on contractual data protection obligations consistent with this Policy.
+
+## International Transfers
+
+Some servers and subprocessors, including website hosting and the geolocation services, may be located outside Brazil. In such cases, we adopt the safeguards provided for in the LGPD, such as standard contractual clauses and guarantees of an adequate level of protection.
+
+## Data Retention
+
+We keep data for as long as needed to fulfil the purposes of this Policy and legal obligations.
+
+After the app is uninstalled, the merchant’s and their customers’ data are deleted or anonymized within a reasonable period, except where retention is required by law. We also handle customer and shop data deletion requests received through Shopify, as required by the platform.
+
+On this website, the detected country stays in your browser for up to 30 days; you can delete it at any time by clearing the site data in your browser.
+
+## Security
+
+We adopt technical and organizational measures to protect data, such as encryption in transit and at rest, access control, monitoring and audits. This website is served over HTTPS only.
+
+No system is completely immune to failures, but we manage risks continuously.
+
+## Your Rights
+
+Under the LGPD, you may request:
+- confirmation that processing takes place and access to the data;
+- correction of incomplete, inaccurate or outdated data;
+- anonymization, blocking or deletion of data;
+- data portability;
+- information about who the data is shared with;
+- withdrawal of consent.
+
+To exercise your rights, contact our data protection officer (section 12). End customers of the stores should first contact the merchant, who is the controller of their data; Everni supports the merchant whenever needed. We respond within the legal deadlines.
+
+## Cookies, Local Storage and Language
+
+This website does not use cookies, analytics or advertising. It only uses your browser’s local storage to remember the language you chose and the detected country, as described in section 2. To choose the language manually, use the PT/EN switch at the top of the page.
+
+The Everni admin uses only essential cookies, required for authentication and operation. The widget shown in the store follows the store’s own cookie settings.
+
+## Changes to this Policy
+
+We may update this Policy from time to time. Material changes will be communicated by email or within the app.
+
+The last updated date at the top of this page shows the version in force. This English version is provided for convenience; in case of conflict, the Portuguese version prevails.
+
+## Data Protection Officer (DPO)
+
+Officer: Gustavo Henrique Gottardi Antunes
+
+Contact: contato@amlab.com.br
+
+Contact our data protection officer about any privacy matter. We respond within the legal deadlines.
+
+Questions about privacy?
+
+Write to our data protection officer: contato@amlab.com.br Read the Terms of Use

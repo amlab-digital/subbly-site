@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.country.is https://ipapi.co https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Everni · Subscriptions and recurring billing app for Shopify</title>
+<meta name="description" content="Native Shopify subscriptions app: plans, recurring billing, failed-payment retries, customer portal and reports. No monthly fee: from 1% to 0.5% of subscription GMV.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://geteverni.com/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://geteverni.com/">
+<link rel="alternate" hreflang="en" href="https://geteverni.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://geteverni.com/en/">
+<meta name="theme-color" content="#181818">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="Everni">
+<meta name="application-name" content="Everni">
+<meta name="apple-mobile-web-app-title" content="Everni">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Everni">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:url" content="https://geteverni.com/en/">
+<meta property="og:title" content="Everni · Subscriptions and recurring billing app for Shopify">
+<meta property="og:description" content="Native Shopify subscriptions app: plans, recurring billing, failed-payment retries, customer portal and reports. No monthly fee: from 1% to 0.5% of subscription GMV.">
+<meta property="og:image" content="https://geteverni.com/assets/img/og-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Everni · Every subscription. One platform.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Everni · Subscriptions and recurring billing app for Shopify">
+<meta name="twitter:description" content="Native Shopify subscriptions app: plans, recurring billing, failed-payment retries, customer portal and reports. No monthly fee: from 1% to 0.5% of subscription GMV.">
+<meta name="twitter:image" content="https://geteverni.com/assets/img/og-en.jpg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5205B2">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#181818">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<link rel="preload" href="/assets/fonts/montserrat-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/assets/img/everest-violeta-1024.avif" type="image/avif" fetchpriority="high">
+<link rel="stylesheet" href="/assets/css/everni.css?v=2048f8c444">
+<script src="/assets/js/lang.js?v=2048f8c444"></script>
+<script src="/assets/js/site.js?v=2048f8c444" defer></script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://geteverni.com/#org",
+   "name": "Everni",
+   "url": "https://geteverni.com/",
+   "legalName": "L.V.M. Alexandrino",
+   "taxID": "32.086.364/0001-22",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://geteverni.com/android-chrome-512x512.png",
+    "width": 512,
+    "height": 512
+   },
+   "image": "https://geteverni.com/assets/img/og-pt.jpg",
+   "email": "contato@amlab.com.br",
+   "telephone": "+55 19 99910-3480",
+   "foundingDate": "2026",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Dom Barreto, 692 - Paraíso",
+    "addressLocality": "Americana",
+    "addressRegion": "SP",
+    "postalCode": "13465-720",
+    "addressCountry": "BR"
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer support",
+     "email": "contato@amlab.com.br",
+     "telephone": "+55 19 99910-3480",
+     "availableLanguage": [
+      "Portuguese",
+      "English"
+     ],
+     "areaServed": "Worldwide"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/everni-official/"
+   ],
+   "brand": {
+    "@type": "Brand",
+    "name": "Everni"
+   },
+   "parentOrganization": {
+    "@type": "Organization",
+    "name": "AM Lab",
+    "url": "https://amlab.com.br"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://geteverni.com/#website",
+   "url": "https://geteverni.com/",
+   "name": "Everni",
+   "alternateName": "Everni Subscriptions",
+   "inLanguage": [
+    "pt-BR",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://geteverni.com/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://geteverni.com/#app",
+   "name": "Everni",
+   "applicationCategory": "BusinessApplication",
+   "applicationSubCategory": "Subscription management",
+   "operatingSystem": "Web (Shopify Admin)",
+   "url": "https://geteverni.com/en/",
+   "installUrl": "https://apps.shopify.com/subbly-subscriptions-app?locale=en",
+   "description": "Native Shopify subscriptions app: plans, recurring billing, failed-payment retries, customer portal and reports. No monthly fee: from 1% to 0.5% of subscription GMV.",
+   "inLanguage": [
+    "pt-BR",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://geteverni.com/#org"
+   },
+   "image": "https://geteverni.com/assets/img/og-en.jpg",
+   "featureList": [
+    "Subscription plans",
+    "Recurring billing",
+    "Retention",
+    "Subscriber portal",
+    "Reports"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.shopify.com/subbly-subscriptions-app?locale=en",
+    "description": "Free to install. Usage fee on monthly subscription GMV — Start: 1% (up to $500K/mo in subscriptions); Growth: 0.75% ($500K to $2.5M/mo); Scale: 0.5% (above $2.5M/mo)"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://geteverni.com/en/#webpage",
+   "url": "https://geteverni.com/en/",
+   "name": "Everni · Subscriptions and recurring billing app for Shopify",
+   "description": "Native Shopify subscriptions app: plans, recurring billing, failed-payment retries, customer portal and reports. No monthly fee: from 1% to 0.5% of subscription GMV.",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@id": "https://geteverni.com/#website"
+   },
+   "about": {
+    "@id": "https://geteverni.com/#app"
+   },
+   "publisher": {
+    "@id": "https://geteverni.com/#org"
+   },
+   "dateModified": "2026-11-23",
+   "primaryImageOfPage": "https://geteverni.com/assets/img/og-en.jpg"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://geteverni.com/en/#faq-ld",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Everni run inside Shopify?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Plans, billing and payments run natively on Shopify, and your subscribers buy through your store’s checkout."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does the 30-day pilot work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You install Everni, set up your plans and bring your active subscribers. For the first 30 days, migration is free and our team runs the operation alongside you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I bring subscribers from another app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We migrate subscribers from Recharge, Skio, other apps or spreadsheets. When payment details are already stored in Shopify, subscribers carry on without re-entering their card; otherwise, each subscriber gets a link to update it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens when a payment is declined?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Everni retries the charge on scheduled dates and notifies the subscriber with a link to update their card. Pause, skip and product swap are available in the portal before cancellation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does Everni cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "1% of monthly subscription GMV up to $500K, 0.75% from $500K to $2.5M and 0.5% above that. No monthly fee and no per-order fee; billed in USD through Shopify."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Everni work with Brazilian payment providers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Stone, our official partner, is already available on Everni. Mercado Pago, PagBank, Cielo, Getnet, Barte and other providers available on Shopify are in the queue. Talk to us to prioritize yours."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Skip to content</a>
+<div class="topbar" role="region" aria-label="Announcement"><div class="wrap topbar__in"><span>Switching from Recharge or Skio? Migration is on us</span><a href="#migration">See how →</a></div></div>
+<header class="site-header">
+<div class="wrap site-header__in">
+<a class="brand" href="/en/" aria-label="Everni, home page" aria-current="page"><img src="/assets/img/logo-everni.svg" alt="" width="34" height="32"><span class="brand__name" aria-hidden="true">EVERNI</span></a>
+<nav id="site-nav" class="site-nav" aria-label="Main">
+<ul><li><a href="#how-it-works">How it works</a></li><li><a href="#savings">Savings</a></li><li><a href="#migration">Migration</a></li><li><a href="#integrations">Integrations</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul>
+<a class="btn btn--dark btn--block site-nav__cta" href="https://apps.shopify.com/subbly-subscriptions-app?locale=en" target="_blank" rel="noopener">Install on Shopify</a>
+</nav>
+<div class="header-actions">
+<nav class="lang-switch" aria-label="Language"><a href="/" hreflang="pt-BR" lang="pt-BR" data-set-lang="pt">PT<span class="visually-hidden"> · Versão em português</span></a><span aria-current="true" lang="en">EN</span></nav>
+<a class="btn btn--dark header-cta" href="https://apps.shopify.com/subbly-subscriptions-app?locale=en" target="_blank" rel="noopener">Install</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="visually-hidden">Menu</span><span class="menu-toggle__bars" aria-hidden="true"></span></button>
+</div>
+</div>
+</header>
+<main id="conteudo" tabindex="-1">
+<section class="hero on-dark" id="top" aria-labelledby="hero-titulo">
+<div class="hero__media parallax"><div class="hero__frame"><picture><source type="image/avif" srcset="/assets/img/everest-violeta-1024.avif 1024w" sizes="100vw"><source type="image/webp" srcset="/assets/img/everest-violeta-1024.webp 1024w" sizes="100vw"><img src="/assets/img/everest-violeta-1024.jpg" srcset="/assets/img/everest-violeta-1024.jpg 1024w" sizes="100vw" alt="Snow-capped peak at dusk under a violet sky, with the Everni mark on the summit" width="1024" height="682" fetchpriority="high" decoding="async"></picture><div class="hero__peak" aria-hidden="true"><span>EVERNI</span><img src="/assets/img/logo-everni.svg" alt="" width="80" height="76"></div></div></div>
+<div class="hero__shade" aria-hidden="true"></div>
+<div class="hero__content">
+<h1 id="hero-titulo">Every subscription.<span>One platform.</span></h1>
+<p class="hero__sub"><span>Native subscriptions for Shopify</span><span class="soft">· B2C · D2C · B2B</span></p>
+<div class="hero__ctas"><a class="btn btn--lime btn--pill" href="https://apps.shopify.com/subbly-subscriptions-app?locale=en" target="_blank" rel="noopener">Install on Shopify</a><a class="btn btn--ghost btn--pill" href="#savings">See your savings</a></div>
+</div>
+<div class="hero__strip"><div class="wrap"><span class="label">Works with</span><span class="brand-name">Stripe</span><span class="brand-name">PayPal</span><span class="brand-name">Shopify Payments</span><span class="brand-name">Authorize.net</span></div></div>
+</section>
+<section class="section section--line" id="problem" aria-labelledby="problema-titulo">
+<div class="wrap"><div class="sec-head reveal"><p class="eyebrow">The problem</p><h2 class="h2" id="problema-titulo">You don’t lose subscribers for lack of product. You lose them to friction.</h2></div>
+<ol class="cards-3" role="list"><li class="card-line reveal"><span class="num" aria-hidden="true">01</span><h3>Pausing shouldn’t take an email</h3><p>When skipping a delivery means contacting support and waiting days, subscribers cancel instead of pausing.</p></li><li class="card-line reveal"><span class="num" aria-hidden="true">02</span><h3>Declined cards become silent churn</h3><p>Without automatic retries and reminders, every expired card is a subscriber lost without anyone noticing.</p></li><li class="card-line reveal"><span class="num" aria-hidden="true">03</span><h3>Per-order fees punish growth</h3><p>Monthly fee, percentage and per-order fees add up to 2% to 3% of subscription GMV on the leading apps.</p></li></ol>
+<p class="closing reveal">Everni fixes all three inside your Shopify store. <a class="link-u" href="#how-it-works">See how it works</a></p>
+</div></section>
+<section class="section section--sand section--line" id="savings" aria-labelledby="calc-titulo">
+<div class="wrap"><div class="sec-head reveal"><p class="eyebrow">Savings</p><h2 class="h2" id="calc-titulo">How much you save by leaving Recharge or Skio.</h2><p class="lead">Slide your monthly subscription GMV and compare the cost month by month.</p></div>
+<div class="calc reveal" id="calc" data-config="{&quot;locale&quot;: &quot;en&quot;, &quot;steps&quot;: [5000, 10000, 20000, 30000, 40000, 50000, 75000, 100000, 150000, 200000, 300000, 400000, 500000, 750000, 1000000, 1500000, 2000000, 2500000, 3000000, 5000000, 7500000, 10000000], &quot;t&quot;: {&quot;cur&quot;: &quot;$&quot;, &quot;cur2&quot;: &quot;$&quot;, &quot;perMonth&quot;: &quot;/mo&quot;, &quot;to&quot;: &quot; to &quot;, &quot;upTo&quot;: &quot;up to &quot;, &quot;pctTo&quot;: &quot; to &quot;, &quot;everniFormula&quot;: &quot;{tier} tier: {rate} of GMV, no monthly fee&quot;}, &quot;competitors&quot;: [{&quot;name&quot;: &quot;Recharge Plus&quot;, &quot;formula&quot;: &quot;$499 + 1.34% + 19¢ per order&quot;, &quot;fixed&quot;: 499, &quot;pct&quot;: 0.0134, &quot;perOrder&quot;: 0.19}, {&quot;name&quot;: &quot;Skio&quot;, &quot;formula&quot;: &quot;$599 + 1% + 20¢ per order&quot;, &quot;fixed&quot;: 599, &quot;pct&quot;: 0.01, &quot;perOrder&quot;: 0.2}, {&quot;name&quot;: &quot;Recharge Standard&quot;, &quot;formula&quot;: &quot;$99 + 1.49% + 19¢ per order&quot;, &quot;fixed&quot;: 99, &quot;pct&quot;: 0.0149, &quot;perOrder&quot;: 0.19}], &quot;tiers&quot;: [{&quot;name&quot;: &quot;Start&quot;, &quot;rate&quot;: 0.01, &quot;max&quot;: 500000, &quot;label&quot;: &quot;1%&quot;}, {&quot;name&quot;: &quot;Growth&quot;, &quot;rate&quot;: 0.0075, &quot;max&quot;: 2500000, &quot;label&quot;: &quot;0.75%&quot;}, {&quot;name&quot;: &quot;Scale&quot;, &quot;rate&quot;: 0.005, &quot;max&quot;: null, &quot;label&quot;: &quot;0.5%&quot;}]}">
+<div class="calc__panel">
+<div class="calc__field"><label class="calc__label" for="calc-gmv">Monthly subscription GMV</label>
+<output class="calc__big" id="calc-gmv-out" for="calc-gmv" aria-live="polite">$50,000</output>
+<input id="calc-gmv" type="range" min="0" max="21" step="1" value="5" aria-valuetext="$50,000">
+<div class="calc__scale" aria-hidden="true"><span>$5K</span><span>$10M</span></div></div>
+<div class="calc__field"><span class="calc__label" id="calc-ticket-label">Average order value</span>
+<div class="chips" role="group" aria-labelledby="calc-ticket-label"><button type="button" class="chip" data-v="25" aria-pressed="false">$25</button><button type="button" class="chip" data-v="40" aria-pressed="true">$40</button><button type="button" class="chip" data-v="60" aria-pressed="false">$60</button></div>
+<p class="calc__note">≈ <span id="calc-orders">1,250</span> subscription orders per month</p></div>
+<div class="calc__save" aria-live="polite"><span class="calc__label">Your yearly savings</span><span class="calc__big calc__big--violet" id="calc-save">$6,978 to $10,878</span><p class="calc__note"><span id="calc-pct">54% to 64%</span> less than Recharge and Skio at this volume. On Everni, you are on the <span id="calc-tier">Start</span> tier (<span id="calc-rate">1%</span>).</p></div>
+<a class="btn btn--dark" href="https://apps.shopify.com/subbly-subscriptions-app?locale=en" target="_blank" rel="noopener">Install on Shopify</a>
+</div>
+<div class="calc__panel"><h3 class="calc__label" id="calc-rows-label">Estimated monthly cost</h3>
+<ol class="rows" id="calc-rows" aria-labelledby="calc-rows-label"><li class="row"><div class="row__top"><div><p class="row__name">Recharge Plus</p><p class="row__formula">$499 + 1.34% + 19¢ per order</p></div><span class="row__cost">$1,406/mo</span></div><div class="row__track"><div class="row__bar" data-w="100.0"></div></div></li><li class="row"><div class="row__top"><div><p class="row__name">Skio</p><p class="row__formula">$599 + 1% + 20¢ per order</p></div><span class="row__cost">$1,349/mo</span></div><div class="row__track"><div class="row__bar" data-w="95.9"></div></div></li><li class="row"><div class="row__top"><div><p class="row__name">Recharge Standard</p><p class="row__formula">$99 + 1.49% + 19¢ per order</p></div><span class="row__cost">$1,082/mo</span></div><div class="row__track"><div class="row__bar" data-w="76.9"></div></div></li><li class="row row--everni"><div class="row__top"><div><p class="row__name">Everni</p><p class="row__formula">Start tier: 1% of GMV, no monthly fee</p></div><span class="row__cost">$500/mo</span></div><div class="row__track"><div class="row__bar" data-w="35.5"></div></div></li></ol>
+<p class="fine">Estimate based on Recharge and Skio public list prices as of Nov 2026 (monthly fee + % of GMV + per-order fee); negotiated plans may differ. Recharge and Skio are trademarks of their respective owners.</p></div>
+</div></div></section>
+<section class="section section--line" id="how-it-works" aria-labelledby="produto-titulo">
+<div class="wrap"><div class="sec-head reveal"><p class="eyebrow">How it works</p><h2 class="h2" id="produto-titulo">Everything a subscription needs, in five parts.</h2></div>
+<div class="tabs" role="tablist" aria-label="Parts of Everni"><button type="button" class="tab" role="tab" id="aba-plans" aria-controls="plans" aria-selected="true" tabindex="0">Plans</button><button type="button" class="tab" role="tab" id="aba-billing" aria-controls="billing" aria-selected="false" tabindex="-1">Billing</button><button type="button" class="tab" role="tab" id="aba-retention" aria-controls="retention" aria-selected="false" tabindex="-1">Retention</button><button type="button" class="tab" role="tab" id="aba-portal" aria-controls="portal" aria-selected="false" tabindex="-1">Portal</button><button type="button" class="tab" role="tab" id="aba-reports" aria-controls="reports" aria-selected="false" tabindex="-1">Reports</button></div>
+<div class="panels reveal"><div class="panel is-active" role="tabpanel" id="plans" aria-labelledby="aba-plans" tabindex="0">
+<div class="panel__text"><h3>Subscription plans</h3><p>Create plans by product, frequency and discount. Customers choose to subscribe on the product page and complete the purchase in your store’s checkout.</p></div>
+<figure><div aria-hidden="true"><div class="mk000">
+<div class="mk001">
+<div class="mk002">
+<img loading="lazy" decoding="async" class="mk003" src="/assets/img/segmentos/cafe.svg" alt="Specialty coffee bag">
+<div class="mk004"><span class="mk005">Specialty coffee · 8.8 oz</span><span class="mk006">Medium roast, whole bean</span></div>
+</div>
+<div class="mk007">
+<span class="mk008"><span class="mk009"></span>One-time purchase</span><span class="mk010">$24.90</span>
+</div>
+<div class="mk011">
+<div class="mk012">
+<span class="mk013"><span class="mk014"></span>Subscribe <span class="mk015">−10%</span></span><span class="mk016">$22.41</span>
+</div>
+<span class="mk017">Pause or skip anytime</span>
+</div>
+<div class="mk018">
+<span class="mk019">Frequency</span>
+<div class="mk020">Every 30 days<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5C5C5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></div>
+</div>
+<div class="mk021">Subscribe</div>
+</div>
+</div></div><figcaption>Fig. 01 · Subscription widget on the product page. Sample screen.</figcaption></figure>
+</div><div class="panel" role="tabpanel" id="billing" aria-labelledby="aba-billing" tabindex="0">
+<div class="panel__text"><h3>Recurring billing</h3><p>Every cycle, Everni creates the order and charges the subscriber automatically. Upcoming charges and renewals live in a single list.</p></div>
+<figure><div aria-hidden="true"><div class="mk000">
+<div class="mk022">
+<div class="mk023">
+<span class="mk005">Upcoming charges</span>
+<span class="mk024">December</span>
+</div>
+<div class="mk025"><div class="mk026"><span class="mk027">Dec 02</span><div class="mk004"><span class="mk028">Marina A.</span><span class="mk006">Specialty coffee · 8.8 oz</span></div></div><div class="mk029"><span class="mk030">$22.41</span><span class="mk031">Scheduled</span></div></div>
+<div class="mk025"><div class="mk026"><span class="mk027">Dec 03</span><div class="mk004"><span class="mk028">João P.</span><span class="mk006">Supplement kit</span></div></div><div class="mk029"><span class="mk030">$59.90</span><span class="mk031">Scheduled</span></div></div>
+<div class="mk025"><div class="mk026"><span class="mk027">Dec 05</span><div class="mk004"><span class="mk028">Lia M.</span><span class="mk006">Serum refill · 1 fl oz</span></div></div><div class="mk029"><span class="mk030">$39.00</span><span class="mk031">Scheduled</span></div></div>
+<div class="mk025"><div class="mk026"><span class="mk027">Nov 28</span><div class="mk004"><span class="mk028">Caio R.</span><span class="mk006">Specialty coffee · 8.8 oz</span></div></div><div class="mk029"><span class="mk030">$22.41</span><span class="mk032">Renewed</span></div></div>
+</div>
+</div></div><figcaption>Fig. 02 · Upcoming charges in the store admin. Sample screen.</figcaption></figure>
+</div><div class="panel" role="tabpanel" id="retention" aria-labelledby="aba-retention" tabindex="0">
+<div class="panel__text"><h3>Retention</h3><p>When a payment is declined, Everni retries and notifies the customer. Pause, skip and product swap offer alternatives before cancellation.</p></div>
+<figure><div aria-hidden="true"><div class="mk033">
+<div class="mk034">
+<div class="mk035">
+<div class="mk036"><span class="mk037">Recovered payments</span><span class="mk038">38</span></div>
+<span class="mk037">this month</span>
+</div>
+<div class="mk039">
+<div class="mk040"><span class="mk041">Retrying</span><span class="mk042">The payment was declined. We'll retry on Dec 14 and notify the customer.</span></div>
+<div class="mk040"><span class="mk043">Paused</span><span class="mk042">Subscriber #0987 paused their subscription for one month.</span></div>
+<div class="mk040"><span class="mk015">Recovered</span><span class="mk042">Payment from subscriber #1042 approved on the second attempt.</span></div>
+</div>
+</div>
+</div></div><figcaption>Fig. 03 · Payment recovery and retention events. Sample screen.</figcaption></figure>
+</div><div class="panel" role="tabpanel" id="portal" aria-labelledby="aba-portal" tabindex="0">
+<div class="panel__text"><h3>Subscriber portal</h3><p>In the portal, subscribers skip a delivery, pause, swap products or update their card without contacting support.</p></div>
+<figure><div aria-hidden="true"><div class="mk044">
+<div class="mk045">
+<div class="mk046"><span class="mk047">My subscription</span><img loading="lazy" decoding="async" class="mk048" src="/assets/img/logo-everni.svg" alt=""></div>
+<span class="mk049">Hi, Marina</span>
+<div class="mk050">
+<div class="mk008">
+<img loading="lazy" decoding="async" class="mk051" src="/assets/img/segmentos/cafe.svg" alt="Specialty coffee bag">
+<div class="mk052"><span class="mk028">Specialty coffee · 8.8 oz</span><span class="mk053">Every 30 days</span></div>
+<span class="mk032">Active</span>
+</div>
+<div class="mk054">
+<div class="mk055"><span class="mk056">Next delivery</span><span class="mk057">Dec 12</span></div>
+<span class="mk053">$22.41</span>
+</div>
+<div class="mk058">
+<div class="mk059">Skip delivery</div><div class="mk059">Pause</div><div class="mk059">Swap product</div><div class="mk059">Change frequency</div>
+</div>
+<div class="mk060"><span>Card ending 4242</span><span class="mk061">Update</span></div>
+</div>
+<div class="mk062">
+<span class="mk063">History</span>
+<div class="mk064"><span>Nov 12</span><span>Delivered</span></div>
+<div class="mk064"><span>Oct 12</span><span>Delivered</span></div>
+</div>
+</div>
+</div></div><figcaption>Fig. 04 · Subscriber portal on mobile. Sample screen.</figcaption></figure>
+</div><div class="panel" role="tabpanel" id="reports" aria-labelledby="aba-reports" tabindex="0">
+<div class="panel__text"><h3>Reports</h3><p>Monthly recurring revenue (MRR), retained revenue and cohort retention, with unit and period on every number.</p></div>
+<figure><div aria-hidden="true"><div class="mk000">
+<div class="mk065">
+<div class="mk066">
+<div class="mk008"><img loading="lazy" decoding="async" class="mk048" src="/assets/img/logo-everni.svg" alt=""><span class="mk005">Reports</span></div>
+<span class="mk024">Last 12 months</span>
+</div>
+<div class="mk067">
+<div class="mk036"><span class="mk068">Retained revenue</span><span class="mk069">96.4%</span></div>
+<span class="mk070">↑ 3.2 pp in 12 months</span>
+</div>
+<div class="mk071">
+<div class="mk072"><span>MRR by month</span><span>Dec 2025 – Nov 2026</span></div>
+<div class="mk073" aria-hidden="true">
+<div class="mk074"></div>
+<div class="mk075"></div>
+<div class="mk076"></div>
+<div class="mk077"></div>
+<div class="mk078"></div>
+<div class="mk079"></div>
+<div class="mk080"></div>
+<div class="mk081"></div>
+<div class="mk082"></div>
+<div class="mk083"></div>
+<div class="mk084"></div>
+<div class="mk085"></div>
+</div>
+<div class="mk086"><span>Dec</span><span>Mar</span><span>Jun</span><span>Sep</span><span>Nov</span></div>
+</div>
+</div>
+</div></div><figcaption>Fig. 05 · Recurring revenue overview. Sample screen.</figcaption></figure>
+</div></div>
+</div></section>
+<section class="mt on-dark" id="climb" aria-labelledby="escalada-titulo">
+<div class="mt__grid" aria-hidden="true"></div>
+<div class="mt__wrap" id="mt">
+<div class="mt__copy reveal">
+<p class="mt__eyebrow">From base camp to summit</p>
+<h2 id="escalada-titulo">Recurring revenue is built like a climb.</h2>
+<p class="mt__lead">Every stop on the route is a part of Everni working for your recurring revenue.</p>
+<p class="mt__hint" aria-hidden="true"><span class="hover">Hover over each point on the route</span><span class="touch">Tap each point on the route</span></p>
+</div>
+<div class="mt__stage" role="group" aria-label="Route from base camp to summit in four stages">
+<div class="mt__rise"><div class="mt__tilt">
+<div class="mt__layer mt__mountain"><div><img src="/assets/img/montanha-3d.svg" alt="" width="1000" height="620" loading="lazy" decoding="async" draggable="false"></div></div>
+<div class="mt__layer mt__mist-layer" aria-hidden="true"><div class="mt__mist mt__mist--1"></div><div class="mt__mist mt__mist--2"></div></div>
+<div class="mt__layer mt__route-layer" aria-hidden="true"><svg viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid meet" focusable="false"><path class="mt__route" d="M321,539 L326,537 L331,534 L337,532 L343,529 L348,526 L354,523 L360,521 L365,518 L371,515 L376,512 L382,509 L387,506 L392,502 L398,499 L403,495 L408,491 L414,487 L421,485 L427,483 L434,481 L441,479 L448,477 L455,475 L461,472 L468,469 L475,467 L482,464 L488,461 L495,458 L502,457 L509,456 L515,455 L522,455 L529,454 L535,454 L542,452 L549,451 L555,449 L562,448 L560,445 L555,442 L550,439 L546,434 L541,430 L536,425 L532,420 L527,415 L522,410 L518,406 L513,401 L509,397 L504,393 L500,389 L496,384 L495,381 L502,379 L508,378 L514,376 L521,375 L527,373 L533,371 L540,368 L546,366 L552,363 L558,361 L565,359 L571,359 L577,359 L583,359 L590,359 L596,358 L602,357 L608,354 L614,352 L621,351 L627,350 L633,348 L637,345 L632,342 L627,338 L622,334 L617,329 L612,324 L607,319 L601,312 L596,305 L591,298 L586,291 L581,284 L576,276 L571,266 L567,265 L565,262 L571,251 L576,246 L582,244 L588,244 L594,244 L600,246 L606,249 L612,248 L617,243 L623,234 L629,232 L635,230 L640,229 L645,227 L642,220 L637,214 L633,202 L629,180 L625,157 L620,129 L616,102 L612,74 L609,54" fill="none" stroke="#FEFEFE" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/><path class="mt__seg" d="M321,539 L326,537 L331,534 L337,532 L343,529 L348,526 L354,523 L360,521 L365,518 L371,515 L376,512 L382,509 L387,506 L392,502 L398,499 L403,495 L408,491 L414,487 L421,485 L427,483 L434,481 L441,479 L448,477 L455,475 L461,472 L468,469 L475,467 L482,464 L488,461 L495,458 L502,457 L509,456 L515,455 L520,455" pathLength="1" fill="none" stroke="#99E604" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1"/><path class="mt__seg" d="M520,455 L527,454 L534,454 L540,453 L547,451 L554,450 L560,448 L561,446 L556,443 L551,440 L547,435 L542,431 L537,426 L533,421 L528,416 L523,411 L519,406 L514,402 L510,398 L505,394 L501,389 L497,385 L494,381 L500,379 L507,378 L513,377 L519,375 L526,373 L532,371 L538,369 L545,366 L551,364 L557,362 L563,360 L570,359 L576,359 L582,359 L588,359 L595,358 L601,357 L607,355 L613,353 L619,351 L625,350 L632,348 L637,346 L634,343 L628,339 L623,335 L618,330 L613,325 L608,320 L603,314 L598,307 L592,300 L587,293 L582,286 L577,279 L573,268 L568,265 L564,263 L565,262" pathLength="1" fill="none" stroke="#99E604" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1"/><path class="mt__seg" d="M565,262 L571,251 L576,246 L582,244 L588,244 L594,244 L600,246 L606,249 L612,248 L617,243 L623,234 L629,232 L635,230 L640,229 L645,227 L642,220 L637,214 L633,202 L629,180 L625,157 L620,129 L616,102 L612,74 L609,54" pathLength="1" fill="none" stroke="#99E604" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1"/><g transform="translate(609.0 54.4)"><path d="M0 -6 V-46" stroke="#FEFEFE" stroke-width="2"/><path class="mt__flag" d="M1 -46 L26 -39 L1 -31 Z" fill="#99E604"/></g></svg></div>
+<div class="mt__layer mt__wps"><div class="wp wp--1 is-on">
+<button type="button" class="wp__btn" aria-label="1. Base camp · Base camp · 5,364 m" aria-pressed="true" aria-describedby="wp-d1"><span class="wp__ping" aria-hidden="true"></span><span class="wp__sq" aria-hidden="true"></span></button>
+<span class="wp__tag" aria-hidden="true">01</span>
+<div class="wp__card" aria-hidden="false"><span class="k">01 · Base camp · 5,364 m</span><span class="t">Base camp</span><span class="d" id="wp-d1">Install from the App Store and bring your subscribers from wherever they are. Migration is on us.</span></div>
+</div><div class="wp wp--2 is-next">
+<button type="button" class="wp__btn" aria-label="2. First charge · Camp II · 6,400 m" aria-pressed="false" aria-describedby="wp-d2"><span class="wp__ping" aria-hidden="true"></span><span class="wp__sq" aria-hidden="true"></span></button>
+<span class="wp__tag" aria-hidden="true">02</span>
+<div class="wp__card" aria-hidden="true"><span class="k">02 · Camp II · 6,400 m</span><span class="t">First charge</span><span class="d" id="wp-d2">Plans, subscriptions and recurring billing on Shopify’s native checkout, with the payment providers you already use.</span></div>
+</div><div class="wp wp--3">
+<button type="button" class="wp__btn" aria-label="3. Every cycle counts · Camp IV · 7,950 m" aria-pressed="false" aria-describedby="wp-d3"><span class="wp__ping" aria-hidden="true"></span><span class="wp__sq" aria-hidden="true"></span></button>
+<span class="wp__tag" aria-hidden="true">03</span>
+<div class="wp__card" aria-hidden="true"><span class="k">03 · Camp IV · 7,950 m</span><span class="t">Every cycle counts</span><span class="d" id="wp-d3">Customer portal, smart retries and reminders keep subscribers renewing month after month.</span></div>
+</div><div class="wp wp--4">
+<button type="button" class="wp__btn" aria-label="4. Scale at a lower rate · Summit · 8,849 m" aria-pressed="false" aria-describedby="wp-d4"><span class="wp__ping" aria-hidden="true"></span><span class="wp__sq" aria-hidden="true"></span></button>
+<span class="wp__tag" aria-hidden="true">04</span>
+<div class="wp__card" aria-hidden="true"><span class="k">04 · Summit · 8,849 m</span><span class="t">Scale at a lower rate</span><span class="d" id="wp-d4">As volume grows, the fee drops from 1% to 0.75% and 0.5% of GMV. No monthly fee.</span></div>
+</div></div>
+</div></div>
+</div>
+<ol class="mt__steps" role="list"><li><button type="button" class="mt__step is-on" aria-pressed="true"><span class="k">01 · Base camp · 5,364 m</span><span class="t">Base camp</span><span class="d">Install from the App Store and bring your subscribers from wherever they are. Migration is on us.</span></button></li><li><button type="button" class="mt__step" aria-pressed="false"><span class="k">02 · Camp II · 6,400 m</span><span class="t">First charge</span><span class="d">Plans, subscriptions and recurring billing on Shopify’s native checkout, with the payment providers you already use.</span></button></li><li><button type="button" class="mt__step" aria-pressed="false"><span class="k">03 · Camp IV · 7,950 m</span><span class="t">Every cycle counts</span><span class="d">Customer portal, smart retries and reminders keep subscribers renewing month after month.</span></button></li><li><button type="button" class="mt__step" aria-pressed="false"><span class="k">04 · Summit · 8,849 m</span><span class="t">Scale at a lower rate</span><span class="d">As volume grows, the fee drops from 1% to 0.75% and 0.5% of GMV. No monthly fee.</span></button></li></ol>
+</div>
+</section>
+<section class="banner on-dark" id="migration" aria-labelledby="migracao-titulo">
+<div class="banner__bg parallax" aria-hidden="true"><picture><source type="image/avif" srcset="/assets/img/escalada-violeta-640.avif 640w, /assets/img/escalada-violeta-1070.avif 1070w" sizes="100vw"><source type="image/webp" srcset="/assets/img/escalada-violeta-640.webp 640w, /assets/img/escalada-violeta-1070.webp 1070w" sizes="100vw"><img src="/assets/img/escalada-violeta-1070.jpg" srcset="/assets/img/escalada-violeta-640.jpg 640w, /assets/img/escalada-violeta-1070.jpg 1070w" sizes="100vw" alt="" width="1070" height="1276" loading="lazy" decoding="async"></picture></div>
+<div class="banner__shade" aria-hidden="true"></div>
+<div class="banner__in reveal">
+<p class="eyebrow">Migration</p>
+<h2 class="h2" id="migracao-titulo">Switch apps without losing a subscriber.</h2>
+<p class="lead">From audit to first charge, we do the work.</p>
+<ol class="steps-3" role="list"><li class="step-card"><span class="num" aria-hidden="true">01</span><h3>Audit</h3><p>We map subscribers, plans, prices and upcoming billing dates in your current app: Recharge, Skio, another app or a spreadsheet.</p></li><li class="step-card"><span class="num" aria-hidden="true">02</span><h3>Import and review</h3><p>Our team imports everything into Everni and checks every subscriber before the switch. Your team doesn’t lift a finger.</p></li><li class="step-card"><span class="num" aria-hidden="true">03</span><h3>Switch with no double charges</h3><p>On the agreed date, Everni takes over billing and your team follows everything in the dashboard.</p></li></ol>
+<div class="banner__ctas"><a class="btn btn--lime btn--block" href="https://apps.shopify.com/subbly-subscriptions-app?locale=en" target="_blank" rel="noopener">Install on Shopify</a><a class="link-u" href="https://wa.me/5519999103480?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions." target="_blank" rel="noopener">Rather talk first? Contact the team</a></div>
+</div>
+</section>
+<section class="section section--line" id="integrations" aria-labelledby="integracoes-titulo">
+<div class="wrap"><div class="sec-head reveal"><p class="eyebrow">Payment integrations</p><h2 class="h2" id="integracoes-titulo">Bill through the provider your business already uses.</h2><p class="lead">On Shopify, Everni runs on Shopify native subscriptions. In Brazil, it bills through Stone, our official partner, and Barte.</p></div>
+<ul class="providers reveal" role="list"><li class="provider provider--featured"><span class="n">Stripe</span><span class="s">Shopify native</span></li><li class="provider"><span class="n">PayPal</span><span class="s">Shopify native</span></li><li class="provider"><span class="n">Shopify Payments</span><span class="s">Shopify native</span></li><li class="provider"><span class="n">Authorize.net</span><span class="s">Shopify native</span></li></ul>
+<details class="more reveal"><summary>+18 more providers on the way<span class="see" aria-hidden="true">See list</span></summary>
+<div class="more__body"><div><h3>Brazil</h3><ul class="tags" role="list"><li>Mercado Pago</li><li>PagBank (PagSeguro)</li><li>Cielo</li><li>Getnet</li><li>Adyen</li><li>Appmax</li><li>Vindi</li><li>Asaas</li><li>PagBrasil</li><li>dLocal</li><li>Divibank</li><li>SaqPay</li></ul></div><div><h3>Worldwide</h3><ul class="tags" role="list"><li>Checkout.com</li><li>Mollie</li><li>Opayo by Elavon</li><li>AltaPay</li><li>Payrexx</li><li>Computop</li></ul></div><p>Using another payment provider available on Shopify? <a href="https://wa.me/5519999103480?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions." target="_blank" rel="noopener">Talk to us</a> and put your store on the priority list.</p><p class="fine">Upcoming integrations are in development or planned, with no guaranteed date. All trademarks belong to their respective owners.</p></div></details>
+</div></section>
+<section class="section section--line" id="pricing" aria-labelledby="precos-titulo">
+<div class="wrap"><div class="sec-head reveal"><p class="eyebrow">Pricing</p><h2 class="h2" id="precos-titulo">One fee that drops as you grow.</h2><p class="lead">You pay a percentage of monthly subscription GMV. The tier applies to the month’s entire volume.</p></div>
+<ul class="tiers reveal" role="list"><li class="tier tier--featured"><span class="name">Start</span><span class="rate">1%</span><span class="range">up to $500K/mo in subscriptions</span></li><li class="tier"><span class="name">Growth</span><span class="rate">0.75%</span><span class="range">$500K to $2.5M/mo</span></li><li class="tier"><span class="name">Scale</span><span class="rate">0.5%</span><span class="range">above $2.5M/mo</span></li></ul>
+<div class="price-foot reveal"><ul class="checks" role="list"><li>Free to install</li><li>No monthly fee, no per-order fee</li><li>Free assisted migration</li><li>Billed in USD by Shopify, on your store invoice</li></ul>
+<div><p><strong>Example:</strong> with $150K/mo in subscriptions you’re on Start and pay $1,500/mo. With $1M/mo you’re on Growth and pay $7,500/mo.</p><p>Large or B2B operation? We offer managed services with dedicated onboarding, a success manager and an SLA, under a separate contract.</p><a class="btn btn--outline" href="https://wa.me/5519999103480?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions." target="_blank" rel="noopener">Book a demo</a></div></div>
+</div></section>
+<section class="section" id="who-its-for" aria-labelledby="para-quem-titulo">
+<div class="wrap"><div class="sec-head reveal"><p class="eyebrow">Who it’s for</p><h2 class="h2" id="para-quem-titulo">Digitally native brands built on repeat purchases.</h2><p class="lead">For DNVBs on Shopify that track LTV, cohort churn and CAC payback, and want an on-brand portal with subscriber data under their own control.</p></div></div>
+<div class="marquee reveal" tabindex="0" role="region" aria-label="Industries served"><ul class="marquee__track" role="list"><li class="seg"><img src="/assets/img/segmentos/cafe.svg" alt="Illustration of a coffee bag next to an espresso cup and coffee beans" width="400" height="460" loading="lazy" decoding="async"><h3>Coffee club</h3><p>Frequency matched to each subscriber’s consumption.</p></li><li class="seg"><img src="/assets/img/segmentos/suplementos.svg" alt="Illustration of a supplement tub and an amber bottle with capsules" width="400" height="460" loading="lazy" decoding="async"><h3>Supplements</h3><p>Monthly kits at subscriber pricing.</p></li><li class="seg"><img src="/assets/img/segmentos/cosmeticos.svg" alt="Illustration of an amber pump bottle, cream jar and refill pouch" width="400" height="460" loading="lazy" decoding="async"><h3>Beauty and refills</h3><p>Automatic refills at the pace of use.</p></li><li class="seg"><img src="/assets/img/segmentos/pet.svg" alt="Illustration of a pet food bag, bowl and rope toy" width="400" height="460" loading="lazy" decoding="async"><h3>Pet</h3><p>Food and treats before the bag runs out.</p></li><li class="seg"><img src="/assets/img/segmentos/b2b.svg" alt="Illustration of stacked cardboard boxes with a recurring order badge" width="400" height="460" loading="lazy" decoding="async"><h3>B2B suppliers</h3><p>Recurring orders from customers who buy online.</p></li><li class="seg seg--dup" aria-hidden="true"><img src="/assets/img/segmentos/cafe.svg" alt="" width="400" height="460" loading="lazy" decoding="async"><h3>Coffee club</h3><p>Frequency matched to each subscriber’s consumption.</p></li><li class="seg seg--dup" aria-hidden="true"><img src="/assets/img/segmentos/suplementos.svg" alt="" width="400" height="460" loading="lazy" decoding="async"><h3>Supplements</h3><p>Monthly kits at subscriber pricing.</p></li><li class="seg seg--dup" aria-hidden="true"><img src="/assets/img/segmentos/cosmeticos.svg" alt="" width="400" height="460" loading="lazy" decoding="async"><h3>Beauty and refills</h3><p>Automatic refills at the pace of use.</p></li><li class="seg seg--dup" aria-hidden="true"><img src="/assets/img/segmentos/pet.svg" alt="" width="400" height="460" loading="lazy" decoding="async"><h3>Pet</h3><p>Food and treats before the bag runs out.</p></li><li class="seg seg--dup" aria-hidden="true"><img src="/assets/img/segmentos/b2b.svg" alt="" width="400" height="460" loading="lazy" decoding="async"><h3>B2B suppliers</h3><p>Recurring orders from customers who buy online.</p></li></ul></div>
+</section>
+<section class="section" id="faq" aria-labelledby="faq-titulo">
+<div class="wrap faq reveal">
+<div class="sec-head"><p class="eyebrow">FAQ</p><h2 class="h2" id="faq-titulo">Frequently asked questions</h2></div>
+<div class="faq__list"><details class="faq__item" open><summary>Does Everni run inside Shopify?</summary><p>Yes. Plans, billing and payments run natively on Shopify, and your subscribers buy through your store’s checkout.</p></details><details class="faq__item"><summary>How does the 30-day pilot work?</summary><p>You install Everni, set up your plans and bring your active subscribers. For the first 30 days, migration is free and our team runs the operation alongside you.</p></details><details class="faq__item"><summary>Can I bring subscribers from another app?</summary><p>Yes. We migrate subscribers from Recharge, Skio, other apps or spreadsheets. When payment details are already stored in Shopify, subscribers carry on without re-entering their card; otherwise, each subscriber gets a link to update it.</p></details><details class="faq__item"><summary>What happens when a payment is declined?</summary><p>Everni retries the charge on scheduled dates and notifies the subscriber with a link to update their card. Pause, skip and product swap are available in the portal before cancellation.</p></details><details class="faq__item"><summary>How much does Everni cost?</summary><p>1% of monthly subscription GMV up to $500K, 0.75% from $500K to $2.5M and 0.5% above that. No monthly fee and no per-order fee; billed in USD through Shopify.</p></details><details class="faq__item"><summary>Does Everni work with Brazilian payment providers?</summary><p>Yes. Stone, our official partner, is already available on Everni. Mercado Pago, PagBank, Cielo, Getnet, Barte and other providers available on Shopify are in the queue. Talk to us to prioritize yours.</p></details></div>
+</div></section>
+<section class="cta" id="get-started" aria-labelledby="cta-titulo">
+<img class="cta__bg parallax" src="/assets/img/relevo-lima.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+<div class="wrap cta__in reveal">
+<p class="eyebrow">Get started</p>
+<h2 id="cta-titulo">Install today. Migration is on us.</h2>
+<p>30-day pilot with free migration.</p>
+<div class="cta__ctas"><a class="btn btn--dark" href="https://apps.shopify.com/subbly-subscriptions-app?locale=en" target="_blank" rel="noopener">Install on Shopify</a></div>
+</div>
+</section>
+<section class="section section--sand" id="contact" aria-labelledby="contato-titulo">
+<div class="wrap contact reveal">
+<div class="contact__col"><h2 id="contato-titulo">Talk to Everni</h2><p>Our team answers questions about plans, migration and integrating your store.</p>
+<div class="contact__links"><a href="mailto:contato@amlab.com.br">Email</a><a href="https://wa.me/5519999103480?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions." target="_blank" rel="noopener">WhatsApp</a></div></div>
+<div class="contact__col"><h2>Book a demo</h2><p>See Everni running with your store’s products.</p><div class="contact__links"><a href="https://wa.me/5519999103480?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions." target="_blank" rel="noopener">Book</a></div></div>
+<div class="contact__col">
+<h2 id="news-titulo">Everni news</h2>
+<form class="stack" action="https://formspree.io/f/SEU_FORM_ID" method="POST" data-newsletter data-fallback="contato@amlab.com.br" data-msg="{&quot;ok&quot;: &quot;Done! You’ll get our updates.&quot;, &quot;invalid&quot;: &quot;Enter a valid email address.&quot;, &quot;slow&quot;: &quot;Please wait a moment and try again.&quot;, &quot;sending&quot;: &quot;Sending…&quot;, &quot;fail&quot;: &quot;We couldn’t send it right now. Try again or email contato@amlab.com.br.&quot;, &quot;mail&quot;: &quot;We opened your email app to finish signing up.&quot;, &quot;subject&quot;: &quot;Sign me up for Everni news&quot;}" aria-labelledby="news-titulo" novalidate>
+<label for="news-email"><p>Get updates on subscriptions on Shopify.</p></label>
+<div class="form-row"><input id="news-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@yourbrand.com"><button type="submit">Subscribe</button></div>
+<div class="hp" aria-hidden="true"><label for="news-gotcha">Não preencha</label><input id="news-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+<input type="hidden" name="_language" value="en">
+<p class="form-status" role="status" aria-live="polite"></p>
+<p class="fine">We only use your email to send updates. See our <a href="/en/privacy-policy/">Privacy Policy</a>.</p>
+</form>
+</div>
+</div></section>
+</main>
+<footer class="site-footer">
+<div class="wrap site-footer__in">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="brand" href="/en/" aria-label="Everni, home page"><img src="/assets/img/logo-everni.svg" alt="" width="34" height="32" loading="lazy"><span class="brand__name" aria-hidden="true">EVERNI</span></a>
+<p class="tag">Subscription platform</p>
+<p>Subscriptions for Shopify brands. No monthly fee, local payment providers.</p>
+</div>
+<nav class="footer-nav" aria-label="Footer">
+<div><h2>Platform</h2><ul><li><a href="#plans">Subscription plans</a></li><li><a href="#billing">Recurring billing</a></li><li><a href="#retention">Retention</a></li><li><a href="#portal">Subscriber portal</a></li><li><a href="#reports">Reports</a></li></ul></div>
+<div><h2>Company</h2><ul><li><a href="/en/about/">About</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#integrations">Partners</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h2>Developers</h2><ul><li><span class="soon">API, webhooks and docs <span class="badge">soon</span></span></li></ul></div>
+<div><h2>Support</h2><ul><li><a href="#faq">Frequently asked questions</a></li><li><a href="/en/terms-of-use/">Terms of use</a></li><li><a href="/en/privacy-policy/">Privacy policy</a></li></ul></div>
+</nav>
+</div>
+<div class="footer-bottom">
+<div class="langs"><span><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Worldwide · English</span><a href="/" hreflang="pt-BR" lang="pt-BR" data-set-lang="pt">Português</a></div>
+<div class="social"><a href="https://www.linkedin.com/company/everni-official/" target="_blank" rel="noopener">LinkedIn</a></div>
+<span>© 2026 Everni · Built for Shopify</span>
+</div>
+<p class="footer-legal">L.V.M. Alexandrino · CNPJ 32.086.364/0001-22 · R. Dom Barreto, 692 - Paraíso, Americana/SP · CEP 13465-720 · <a href="mailto:contato@amlab.com.br" class="link-plain">contato@amlab.com.br</a></p>
+</div>
+</footer>
+</body>
+</html>

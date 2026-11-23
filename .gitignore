@@ -1,2 +1,4 @@
 .DS_Store
 Site-Antigo-Subbly/
+__pycache__/
+*.pyc

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="46%" r="72%"><stop offset="0" stop-color="#2A1650"/><stop offset=".48" stop-color="#1A1426"/><stop offset="1" stop-color="#121212"/></radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#6B3FE0" stop-opacity=".38"/><stop offset=".55" stop-color="#5205B2" stop-opacity=".12"/><stop offset="1" stop-color="#5205B2" stop-opacity="0"/></radialGradient>
+  <linearGradient id="vt" x1="91" y1="25" x2="55" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5A2DB8"/><stop offset=".65" stop-color="#4A22A8"/><stop offset="1" stop-color="#2E1470"/></linearGradient>
+  <linearGradient id="vb" x1="30" y1="84" x2="48" y2="63" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5329B2"/><stop offset=".55" stop-color="#4420A0"/><stop offset="1" stop-color="#25105E"/></linearGradient>
+  <linearGradient id="gr" x1="28" y1="44" x2="91" y2="78" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B9D976"/><stop offset=".5" stop-color="#ABCB68"/><stop offset="1" stop-color="#9CBD5B"/></linearGradient>
+</defs>
+<rect width="64" height="64" rx="14.1" fill="url(#bg)"/>
+<circle cx="32.0" cy="32.0" r="29.4" fill="url(#glow)"/>
+<g transform="translate(-19.98 -16.18) scale(0.8737)"><path d="M40.00 51.00 L75.08 33.46 Q91.00 25.50 91.00 43.30 L91.00 66.00 Z" fill="url(#vt)"/><path d="M28.00 54.00 L28.00 71.40 Q28.00 84.80 40.12 79.09 L66.00 66.90 Z" fill="url(#vb)"/><path d="M28.00 51.79 Q28.00 42.00 37.45 44.55 L91.00 59.00 L91.00 69.90 Q91.00 80.00 81.33 77.08 L28.00 61.00 Z" fill="url(#gr)"/></g>
+</svg>
