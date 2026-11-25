@@ -89,8 +89,8 @@ button { cursor: pointer; }
 .section--sand { background: var(--sand); }
 .section--line { border-top: 1px solid var(--line); }
 .section--who { background: #2B0F67; }
-.section--who .eyebrow { color: rgba(254, 254, 254, .72); }
-.section--who .h2 { color: var(--lime); }
+.section--who .eyebrow { color: var(--lime); }
+.section--who .h2 { color: #FFFFFF; }
 .section--who .lead { color: rgba(254, 254, 254, .85); }
 .section--who .seg h3 { color: #FFFFFF; }
 .section--who .seg p { color: rgba(254, 254, 254, .78); }
