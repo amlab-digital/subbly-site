@@ -318,7 +318,7 @@ button { cursor: pointer; }
 .marquee::-webkit-scrollbar { display: none; }
 .marquee__track { display: flex; gap: 16px; width: max-content; padding-inline: var(--gutter); list-style: none; margin: 0; }
 .seg { flex: 0 0 min(72vw, 300px); display: flex; flex-direction: column; gap: 10px; scroll-snap-align: start; }
-.seg picture { display: block; background: #FFFFFF; border: 1px solid var(--line); }
+.seg picture { display: block; background: transparent; border: 0; }
 .seg img { width: 100%; height: auto; aspect-ratio: 400 / 370; object-fit: contain; }
 .seg h3 { margin-top: 4px; font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
 .seg p { font-size: 14px; line-height: 1.6; color: var(--muted); }
