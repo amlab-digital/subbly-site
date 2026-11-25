@@ -4,6 +4,6 @@ Contato: contato@amlab.com.br
 Local: Americana/SP, Brasil
 
 /* SITE */
-Última atualização: 2026-11-23
+Última atualização: 2026-11-25
 Padrões: HTML5, CSS3, JavaScript sem dependências, Schema.org (JSON-LD)
 Fontes: Montserrat, JetBrains Mono (auto-hospedadas, SIL OFL)

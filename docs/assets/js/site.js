@@ -84,7 +84,7 @@ var render = function () {
 var gmv = cfg.steps[state.idx], orders = Math.round(gmv / state.ticket), tier = tierFor(gmv), ev = gmv * tier.rate;
 var all = cfg.competitors.map(function (c) { return { name: c.name, formula: c.formula, cost: c.fixed + gmv * c.pct + orders * c.perOrder, everni: false }; });
 var comps = all.slice();
-all.push({ name: "Everni", formula: cfg.t.everniFormula.replace("{tier}", tier.name).replace("{rate}", tier.label), cost: ev, everni: true });
+all.push({ name: "Everni", formula: cfg.t.everniFormula.replace("{rate}", tier.label), cost: ev, everni: true });
 all.sort(function (a, b) { return b.cost - a.cost; });
 var max = all[0].cost;
 var html = all.map(function (r) {
@@ -103,15 +103,18 @@ range.setAttribute("aria-valuetext", cfg.t.cur + fmt(gmv));
 $("#calc-orders").textContent = fmt(orders);
 $("#calc-save").textContent = sMin > 0 ? cfg.t.cur + fmt(sMin) + cfg.t.to + cfg.t.cur2 + fmt(sMax) : cfg.t.upTo + cfg.t.cur + fmt(sMax);
 $("#calc-pct").textContent = Math.round((1 - ev / minC) * 100) + "%" + cfg.t.pctTo + Math.round((1 - ev / maxC) * 100) + "%";
-$("#calc-tier").textContent = tier.name;
 $("#calc-rate").textContent = tier.label;
 };
+var used = false;
+var track = function () { if (used || !window.dataLayer) return; used = true; window.dataLayer.push({ event: "calculator_use", gmv: cfg.steps[state.idx], ticket: state.ticket }); };
 range.addEventListener("input", function () { state.idx = Number(range.value) || 0; render(); });
+range.addEventListener("change", track);
 chips.forEach(function (c) {
 c.addEventListener("click", function () {
 chips.forEach(function (x) { x.setAttribute("aria-pressed", String(x === c)); });
 state.ticket = Number(c.getAttribute("data-v"));
 render();
+track();
 });
 });
 render();
@@ -174,6 +177,22 @@ timer = setInterval(function () { if (!touched && !hovering) setPeak((peak % 4) 
 }, { threshold: 0.25 }).observe(mt);
 }
 }
+/* ---------- Medição: cliques em CTAs vão para o dataLayer (GTM). Sem GTM, nada é enviado. ---------- */
+document.addEventListener("click", function (e) {
+if (!window.dataLayer) return;
+var a = e.target.closest ? e.target.closest("a") : null;
+if (!a) return;
+var href = a.getAttribute("href") || "", type = a.getAttribute("data-track");
+if (!type) {
+if (/apps\.shopify\.com/.test(href)) type = "install";
+else if (/wa\.me\//.test(href)) type = "whatsapp";
+else if (/^mailto:/.test(href)) type = "email";
+else return;
+}
+var sec = a.closest("section[id], .site-header, .topbar, footer");
+window.dataLayer.push({ event: "cta_click", cta_type: type, cta_text: (a.textContent || "").replace(/\s+/g, " ").trim().slice(0, 80),
+cta_location: sec ? (sec.id || sec.className.split(" ")[0]) : "", link_url: a.href });
+}, true);
 /* ---------- Newsletter: honeypot + tempo mínimo + envio via fetch ---------- */
 $$("form[data-newsletter]").forEach(function (form) {
 var started = Date.now();
@@ -193,7 +212,7 @@ return say(msg.mail);
 }
 say(msg.sending);
 fetch(action, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) })
-.then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); say(msg.ok); })
+.then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); say(msg.ok); if (window.dataLayer) window.dataLayer.push({ event: "newsletter_signup" }); })
 .catch(function () { say(msg.fail, true); });
 });
 });

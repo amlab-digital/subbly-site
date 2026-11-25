@@ -15,7 +15,7 @@ DATA = HERE / "data"
 CSS_OUT = HERE / "data" / "mocks.css"
 
 BLOBS = {
-    "/_blob/95d1feebcb642efc3797f02d0155e942": "/assets/img/segmentos/cafe.svg",
+    "/_blob/95d1feebcb642efc3797f02d0155e942": "/assets/img/segmentos/cafe.png",
     "/_blob/8bcac59f38f97adb9bebbf622b429859": "/assets/img/logo-everni.svg",
 }
 

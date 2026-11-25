@@ -1,52 +1,31 @@
 # Everni — full site content (PT-BR + EN)
-Source: https://geteverni.com · Last updated 2026-11-23
+Source: https://geteverni.com · Last updated 2026-11-25
 
 
 ---
 
 URL: https://geteverni.com/
 
-# Toda a sua recorrência. Uma só plataforma.
+# Receita Recorrente em uma só plataforma.
 
 O primeiro app de assinaturas da Shopify feito no Brasil · B2C · D2C · B2B Instalar na Shopify Ver quanto custa Integra com Stone Barte Stripe PayPal
 
-O problema
+## Vender por assinatura é manter uma relação.
 
-## Você não perde assinante por falta de produto. Perde por atrito.
-- **Pausar não pode depender de e-mail** — Quando pular uma entrega exige falar com o atendimento e esperar dias, o assinante cancela no lugar de pausar.
-- **Cartão recusado vira cancelamento silencioso** — Sem retentativa e aviso automático, cada cartão vencido é um assinante perdido sem ninguém perceber.
-- **Taxa por pedido pune quem cresce** — Mensalidade, percentual e taxa por pedido somam de 2% a 3% do GMV de assinaturas nos apps líderes.
+A cada ciclo, o cliente decide continuar, e a marca precisa entregar, cobrar e permitir ajustes sem atrito. A Everni organiza essa operação dentro da sua loja Shopify para que cada assinante fique por mais ciclos.
+
+## O que muda com a Everni
+- **Pausar ou pular uma entrega** — Hoje: Pular uma entrega exige falar com o atendimento e esperar dias. O assinante cancela no lugar de pausar. — Com a Everni: O assinante pula, pausa ou troca o produto no portal, sem falar com o atendimento.
+- **Cartão recusado** — Hoje: Sem retentativa nem aviso automático, cada cartão vencido vira um cancelamento silencioso. — Com a Everni: A Everni tenta a cobrança de novo em datas programadas e avisa o assinante com um link para atualizar o cartão.
+- **Custo da plataforma** — Hoje: Mensalidade, percentual e taxa por pedido somam de 2% a 3% do GMV de assinaturas nos apps líderes. — Com a Everni: Uma taxa só: 1% do GMV. Sem mensalidade e sem taxa por pedido.
 
 A Everni resolve os três dentro da sua loja Shopify. Ver como funciona
 
-Para quem é
+Da base ao cume
 
-## Marcas nativas digitais que vivem de recompra.
+## Transforme compradores em assinantes que ficam mais tempo
 
-Para DNVBs na Shopify que medem LTV, churn por coorte e payback de CAC, e querem um portal com a cara da marca e os dados do assinante sob o próprio controle.
-- **Clube de café** — Frequência ajustada ao consumo de cada assinante.
-- **Suplementos** — Kits mensais com preço de assinante.
-- **Cosméticos e refis** — Refil automático no ritmo de uso.
-- **Pet** — Ração e petiscos antes do pacote acabar.
-- **Fornecedores B2B** — Pedidos recorrentes de clientes que compram online.
-
-Quanto custa
-
-## Compare com Recharge e Skio.
-
-Mova o GMV mensal de assinaturas e compare o custo mês a mês. GMV mensal de assinaturas US$ 50.000 Ticket médio por pedido
-
-≈ 1.250 pedidos de assinatura por mês Sua economia por ano US$ 6.978 a 10.878
-
-54% a 64% a menos que Recharge e Skio nesse volume. Na Everni, você fica na faixa Start ( 1% ). Instalar na Shopify
-
-### Custo mensal estimado
-- Recharge Plus — US$ 499 + 1,34% + 19¢ por pedido US$ 1.406/mês
-- Skio — US$ 599 + 1% + 20¢ por pedido US$ 1.349/mês
-- Recharge Standard — US$ 99 + 1,49% + 19¢ por pedido US$ 1.082/mês
-- Everni — Faixa Start: 1% do GMV, sem mensalidade US$ 500/mês
-
-Estimativa com preços públicos de tabela de Recharge e Skio em nov/2026 (mensalidade + % do GMV + taxa por pedido); planos sob negociação podem variar. Recharge e Skio são marcas de seus respectivos donos.
+Receita recorrente se constrói como uma escalada: cada etapa da rota é uma parte da Everni trabalhando pela sua recorrência. 01 · Base · 5.364 m Acampamento base Instale pela App Store e traga seus assinantes de onde estiverem. A migração fica por nossa conta.
 
 Como funciona
 
@@ -72,30 +51,45 @@ No portal, o assinante pula uma entrega, pausa, troca o produto ou atualiza o ca
 
 Receita recorrente (MRR), receita retida e retenção por coorte, sempre com unidade e período em cada número.
 
-Da base ao cume
+Para quem é
 
-## Receita recorrente se constrói como uma escalada.
+## Para marcas que querem transformar recompra em assinatura.
 
-Cada etapa da rota é uma parte da Everni trabalhando pela sua recorrência. 01 · Base · 5.364 m Acampamento base Instale pela App Store e traga seus assinantes de onde estiverem. A migração fica por nossa conta.
+Um portal com a cara da marca e os dados do assinante sob o próprio controle.
+- **Clube de café** — Frequência ajustada ao consumo de cada assinante.
+- **Suplementos** — Kits mensais com preço de assinante.
+- **Cosméticos e refis** — Refil automático no ritmo de uso.
+- **Vinhos e bebidas** — Seleção do mês com preço de sócio.
+- **Pet** — Ração e petiscos antes do pacote acabar.
+- **Bebê** — Fraldas e lenços no tamanho de cada fase.
+- **Higiene e barbear** — Lâminas novas na hora da troca.
+- **Casa e limpeza** — Produtos de limpeza na frequência da casa.
 
-Migração
+Quanto custa?
 
-## Troque de app sem perder um assinante.
+## Compare com Recharge e Skio.
 
-Do levantamento à primeira cobrança, o trabalho fica com a gente.
-- **Levantamento** — Mapeamos assinantes, planos, preços e próximas datas de cobrança no app atual: Recharge, Skio, outro app ou planilha.
-- **Importação e conferência** — Nosso time importa tudo para a Everni e confere assinante por assinante antes da virada. Seu time não precisa fazer nada.
-- **Virada sem cobrança duplicada** — Na data combinada, a Everni assume as cobranças e seu time acompanha tudo pelo painel. Instalar na Shopify Prefere conversar antes? Fale com o time
+Mova o GMV mensal de assinaturas e compare o custo mês a mês. GMV mensal de assinaturas US$ 50.000 Ticket médio por pedido
 
-Integrações de pagamento
+≈ 1.250 pedidos de assinatura por mês Sua economia por ano US$ 7.788 a 11.688
 
-## Cobre pelo provedor que a sua operação já usa.
+56% a 66% a menos que Recharge e Skio nesse volume. Na Everni, você paga 1% do GMV. Instalar na Shopify
 
-Na Shopify, a Everni usa a recorrência nativa da plataforma. No Brasil, cobra pela Stone, nossa parceira oficial, e pela Barte.
-- Stone Parceira oficial · Brasil
-- Barte Disponível · Brasil
-- Stripe Nativo da Shopify
-- PayPal Nativo da Shopify
+### Custo mensal estimado
+- Skio Scale — US$ 599 + 1,25% + 20¢ por pedido US$ 1.474/mês
+- Recharge Scale — US$ 499 + 1,25% + 20¢ por pedido US$ 1.374/mês
+- Recharge Starter — US$ 149 + 1,5% + 20¢ por pedido US$ 1.149/mês
+- Everni — 1% do GMV, sem mensalidade US$ 500/mês
+
+Estimativa com preços públicos de tabela de Recharge e Skio em nov/2026 (mensalidade + % do GMV + taxa por pedido); planos sob negociação podem variar. Recharge e Skio são marcas de seus respectivos donos.
+
+## Integrações de pagamento
+
+Você escolhe o provedor que cobra seus assinantes: é só conectar sua conta. A Stone é nossa parceira oficial.
+-
+-
+-
+-
 
 +18 provedores a caminho
 
@@ -125,22 +119,63 @@ Usa outro provedor de pagamento disponível na Shopify? Fale com a gente e coloq
 
 Integrações a caminho estão em desenvolvimento ou planejadas, sem data garantida. As marcas citadas pertencem aos seus respectivos donos.
 
+Migração
+
+## Troque de app com segurança
+
+Do levantamento à primeira cobrança, o trabalho fica com a gente.
+- **Levantamento** — Mapeamos assinantes, planos, preços e próximas datas de cobrança no app atual: Recharge, Skio, outro app ou planilha.
+- **Importação e conferência** — Nosso time importa tudo para a Everni e confere assinante por assinante antes da virada. Seu time não precisa fazer nada.
+- **Virada sem cobrança duplicada** — Na data combinada, a Everni assume as cobranças e seu time acompanha tudo pelo painel. Instalar na Shopify Prefere conversar antes? Fale com o time
+
 Preços
 
-## Uma taxa só, que cai quando você cresce.
+## Growth together
 
-Você paga um percentual do GMV mensal de assinaturas. A faixa vale para todo o volume do mês.
-- Start 1% até US$ 500 mil/mês em assinaturas
-- Growth 0,75% de US$ 500 mil a US$ 2,5 mi/mês
-- Scale 0,5% acima de US$ 2,5 mi/mês
+Instalação gratuita e uma taxa única de 1% do GMV mensal de assinaturas. Sem mensalidade, sem taxa por pedido e sem faixas para acompanhar.
+
+### Growth
+
+1%
+
+do GMV mensal de assinaturas. Tudo o que a Everni faz hoje, para qualquer tamanho de loja. Instalar na Shopify
+
+Inclui:
+- Planos por produto, frequência e desconto
+- Assinatura no checkout nativo da Shopify
+- Cobrança recorrente automática a cada ciclo
+- Retentativas de pagamento com aviso ao assinante
+- Fluxo de cancelamento com ofertas de retenção
+- E-mails automáticos para o assinante
+- Portal do assinante: pular, pausar, trocar produto, mudar frequência e atualizar cartão
+- Upsell de produtos no portal
+- Descontos progressivos
+- Assinaturas B2B
+- Vários idiomas e moedas com Shopify Markets
+- API e webhooks
+- Relatórios de MRR, receita retida e retenção por coorte
+- Migração assistida e gratuita, da Recharge, da Skio ou de planilhas
+- Onboarding com o nosso time
+- Suporte humano em horário comercial
+
+### Enterprise
+
+Sob medida
+
+Para operações de alto volume ou modelos de negócio fora do padrão. Falar sobre o Enterprise
+
+Tudo do Growth, mais:
+- Suporte 24/7: A qualquer hora, todos os dias. Quando cada minuto parado custa caro, a gente responde.
+- Gerente de sucesso dedicado: Uma pessoa de contato que conhece a sua operação de ponta a ponta.
+- Voz no roadmap: Seus pedidos não ficam na fila: entram na prioridade do produto.
+- Acesso antecipado: Teste novidades e versões beta antes de todo mundo.
+- Desenvolvimento sob medida: Integrações e migrações complexas construídas junto com o seu time.
+- Condições por volume: Taxa negociada para quem movimenta grande volume em assinaturas.
 - Instalação gratuita
 - Sem mensalidade e sem taxa por pedido
-- Migração assistida e gratuita
-- Cobrança em USD pela Shopify, na sua fatura da loja
+- Cobrança em USD pela Shopify, na fatura da loja
 
-Exemplo: com US$ 150 mil/mês em assinaturas, você fica na faixa Start e paga US$ 1.500/mês. Com US$ 1 mi/mês, fica na Growth e paga US$ 7.500/mês.
-
-Operação grande ou B2B? Temos serviços gerenciados com onboarding dedicado, gerente de sucesso e SLA, em contrato à parte. Agendar demo
+Sua operação tem volume alto ou um modelo que foge do padrão? Conte para a gente como ela funciona e montamos o Enterprise com você.
 
 Comece agora
 
@@ -152,9 +187,21 @@ Dúvidas
 
 ## Perguntas frequentes
 
+O que é a Everni?
+
+A Everni é um app de assinaturas e cobrança recorrente nativo da Shopify, feito no Brasil. Ela cuida de planos, cobrança automática, retentativa de pagamento, portal do assinante e relatórios de receita recorrente, para operações B2C, D2C e B2B.
+
 A Everni funciona dentro da Shopify?
 
 Sim. Planos, cobrança e pagamentos rodam de forma nativa na Shopify, e seus assinantes compram pelo checkout da sua loja.
+
+Quanto custa a Everni?
+
+Instalação gratuita e 1% do GMV mensal de assinaturas, sem mensalidade e sem taxa por pedido; a cobrança é em USD, pela Shopify. Para operações de alto volume, há o plano Enterprise, com condições negociadas.
+
+O que o plano Enterprise inclui a mais?
+
+Tudo do plano Growth, mais suporte 24/7, gerente de sucesso dedicado, voz no roadmap do produto, acesso antecipado a novidades, desenvolvimento sob medida e condições por volume.
 
 Como funciona o piloto de 30 dias?
 
@@ -168,13 +215,9 @@ O que acontece quando um pagamento não é aprovado?
 
 A Everni tenta a cobrança de novo em datas programadas e avisa o assinante com um link para atualizar o cartão. Pausa, pulo de entrega e troca de produto ficam disponíveis no portal antes do cancelamento.
 
-Quanto custa a Everni?
-
-1% do GMV mensal de assinaturas até US$ 500 mil, 0,75% de US$ 500 mil a US$ 2,5 mi e 0,5% acima disso. Sem mensalidade e sem taxa por pedido; a cobrança é em USD, pela Shopify.
-
 A Everni funciona com provedores de pagamento brasileiros?
 
-Sim. A Stone, nossa parceira oficial, já está disponível na Everni. Mercado Pago, PagBank, Cielo, Getnet, Barte e outros provedores disponíveis na Shopify estão na fila. Fale com a gente para priorizar o seu.
+Sim. A Stone, nossa parceira oficial, e a Barte já estão disponíveis na Everni. Mercado Pago, PagBank, Cielo, Getnet e outros provedores disponíveis na Shopify estão na fila. Fale com a gente para priorizar o seu.
 
 ## Fale com a Everni
 
@@ -459,32 +502,22 @@ URL: https://geteverni.com/en/
 
 Native subscriptions for Shopify · B2C · D2C · B2B Install on Shopify See your savings Works with Stripe PayPal Shopify Payments Authorize.net
 
-The problem
+## Selling subscriptions means keeping a relationship.
 
-## You don’t lose subscribers for lack of product. You lose them to friction.
-- **Pausing shouldn’t take an email** — When skipping a delivery means contacting support and waiting days, subscribers cancel instead of pausing.
-- **Declined cards become silent churn** — Without automatic retries and reminders, every expired card is a subscriber lost without anyone noticing.
-- **Per-order fees punish growth** — Monthly fee, percentage and per-order fees add up to 2% to 3% of subscription GMV on the leading apps.
+Every cycle, the customer decides whether to stay, and the brand has to deliver, charge and allow changes without friction. Everni runs this operation inside your Shopify store so every subscriber stays for more cycles.
+
+## What changes with Everni
+- **Pausing or skipping a delivery** — Today: Skipping a delivery means contacting support and waiting days. Subscribers cancel instead of pausing. — With Everni: Subscribers skip, pause or swap products in the portal, without contacting support.
+- **Declined card** — Today: Without retries or automatic reminders, every expired card becomes a silent cancellation. — With Everni: Everni retries the charge on scheduled dates and notifies the subscriber with a link to update their card.
+- **Platform cost** — Today: Monthly fee, percentage and per-order fees add up to 2% to 3% of subscription GMV on the leading apps. — With Everni: One flat fee: 1% of GMV. No monthly fee and no per-order fee.
 
 Everni fixes all three inside your Shopify store. See how it works
 
-Savings
+From base camp to summit
 
-## How much you save by leaving Recharge or Skio.
+## Turn buyers into subscribers who stay longer
 
-Slide your monthly subscription GMV and compare the cost month by month. Monthly subscription GMV $50,000 Average order value
-
-≈ 1,250 subscription orders per month Your yearly savings $6,978 to $10,878
-
-54% to 64% less than Recharge and Skio at this volume. On Everni, you are on the Start tier ( 1% ). Install on Shopify
-
-### Estimated monthly cost
-- Recharge Plus — $499 + 1.34% + 19¢ per order $1,406/mo
-- Skio — $599 + 1% + 20¢ per order $1,349/mo
-- Recharge Standard — $99 + 1.49% + 19¢ per order $1,082/mo
-- Everni — Start tier: 1% of GMV, no monthly fee $500/mo
-
-Estimate based on Recharge and Skio public list prices as of Nov 2026 (monthly fee + % of GMV + per-order fee); negotiated plans may differ. Recharge and Skio are trademarks of their respective owners.
+Recurring revenue is built like a climb: every stop on the route is a part of Everni working for your recurring revenue. 01 · Base camp · 5,364 m Base camp Install from the App Store and bring your subscribers from wherever they are. Migration is on us.
 
 How it works
 
@@ -510,32 +543,55 @@ In the portal, subscribers skip a delivery, pause, swap products or update their
 
 Monthly recurring revenue (MRR), retained revenue and cohort retention, with unit and period on every number.
 
-From base camp to summit
+Who it’s for
 
-## Recurring revenue is built like a climb.
+## For brands that want to turn repeat purchases into subscriptions.
 
-Every stop on the route is a part of Everni working for your recurring revenue. 01 · Base camp · 5,364 m Base camp Install from the App Store and bring your subscribers from wherever they are. Migration is on us.
+An on-brand portal with subscriber data under your own control.
+- **Coffee club** — Frequency matched to each subscriber’s consumption.
+- **Supplements** — Monthly kits at subscriber pricing.
+- **Beauty and refills** — Automatic refills at the pace of use.
+- **Wine and drinks** — The month’s selection at member pricing.
+- **Pet** — Food and treats before the bag runs out.
+- **Baby** — Diapers and wipes in the right size for each stage.
+- **Personal care and shaving** — Fresh blades right when they’re due.
+- **Home and cleaning** — Cleaning products at your household’s pace.
 
-Migration
+Savings
 
-## Switch apps without losing a subscriber.
+## Compare with Recharge and Skio.
 
-From audit to first charge, we do the work.
-- **Audit** — We map subscribers, plans, prices and upcoming billing dates in your current app: Recharge, Skio, another app or a spreadsheet.
-- **Import and review** — Our team imports everything into Everni and checks every subscriber before the switch. Your team doesn’t lift a finger.
-- **Switch with no double charges** — On the agreed date, Everni takes over billing and your team follows everything in the dashboard. Install on Shopify Rather talk first? Contact the team
+Slide your monthly subscription GMV and compare the cost month by month. Monthly subscription GMV $50,000 Average order value
 
-Payment integrations
+≈ 1,250 subscription orders per month Your yearly savings $7,788 to $11,688
 
-## Bill through the provider your business already uses.
+56% to 66% less than Recharge and Skio at this volume. On Everni, you pay 1% of GMV. Install on Shopify
 
-On Shopify, Everni runs on Shopify native subscriptions. In Brazil, it bills through Stone, our official partner, and Barte.
-- Stripe Shopify native
-- PayPal Shopify native
-- Shopify Payments Shopify native
-- Authorize.net Shopify native
+### Estimated monthly cost
+- Skio Scale — $599 + 1.25% + 20¢ per order $1,474/mo
+- Recharge Scale — $499 + 1.25% + 20¢ per order $1,374/mo
+- Recharge Starter — $149 + 1.5% + 20¢ per order $1,149/mo
+- Everni — 1% of GMV, no monthly fee $500/mo
 
-+18 more providers on the way
+Estimate based on Recharge and Skio public list prices as of Nov 2026 (monthly fee + % of GMV + per-order fee); negotiated plans may differ. Recharge and Skio are trademarks of their respective owners.
+
+## Payment integrations
+
+Everni is built on Shopify’s native subscription engine. Renewals are charged through the gateway already connected to your store: no new merchant account, no separate checkout.
+-
+-
+-
+-
+
+18 more gateways in the works
+
+### Worldwide
+- Checkout.com
+- Mollie
+- Opayo by Elavon
+- AltaPay
+- Payrexx
+- Computop
 
 ### Brazil
 - Mercado Pago
@@ -551,53 +607,93 @@ On Shopify, Everni runs on Shopify native subscriptions. In Brazil, it bills thr
 - Divibank
 - SaqPay
 
-### Worldwide
-- Checkout.com
-- Mollie
-- Opayo by Elavon
-- AltaPay
-- Payrexx
-- Computop
+Using a different gateway on Shopify? Talk to us and we’ll move your store up the queue.
 
-Using another payment provider available on Shopify? Talk to us and put your store on the priority list.
+Upcoming integrations are planned or in development, and timelines aren’t guaranteed. All trademarks are the property of their respective owners.
 
-Upcoming integrations are in development or planned, with no guaranteed date. All trademarks belong to their respective owners.
+Migration
+
+## Switch apps with confidence
+
+From audit to first charge, we do the work.
+- **Audit** — We map subscribers, plans, prices and upcoming billing dates in your current app: Recharge, Skio, another app or a spreadsheet.
+- **Import and review** — Our team imports everything into Everni and checks every subscriber before the switch. Your team doesn’t lift a finger.
+- **Switch with no double charges** — On the agreed date, Everni takes over billing and your team follows everything in the dashboard. Install on Shopify Rather talk first? Contact the team
 
 Pricing
 
-## One fee that drops as you grow.
+## Growth together
 
-You pay a percentage of monthly subscription GMV. The tier applies to the month’s entire volume.
-- Start 1% up to $500K/mo in subscriptions
-- Growth 0.75% $500K to $2.5M/mo
-- Scale 0.5% above $2.5M/mo
+Free to install, then a flat 1% of monthly subscription GMV. No monthly fee, no per-order fee, no tiers to track.
+
+### Growth
+
+1%
+
+of monthly subscription GMV. Everything Everni does today, for stores of any size. Install on Shopify
+
+Includes:
+- Subscription plans by product, frequency and discount
+- Subscribe-and-save on native Shopify checkout
+- Automated recurring billing every cycle
+- Failed payment recovery with automatic retries and customer alerts
+- Cancellation flow with save offers
+- Automated subscriber emails
+- Self-serve customer portal: skip, pause, swap, change frequency and update payment method
+- Upsells in the customer portal
+- Tiered discounts
+- B2B subscriptions
+- Multi-language and multi-currency with Shopify Markets
+- API and webhooks
+- Analytics for MRR, retained revenue and cohort retention
+- Free assisted migration from Recharge, Skio or spreadsheets
+- Hands-on onboarding with our team
+- Human support during business hours
+
+### Enterprise
+
+Custom
+
+For high-volume brands and non-standard business models. Talk to us about Enterprise
+
+Everything in Growth, plus:
+- 24/7 support: Around the clock, every day. When every minute of downtime costs you, we pick up.
+- Dedicated success manager: One point of contact who knows your business inside and out.
+- Direct input on the roadmap: Your requests skip the backlog and shape what we build next.
+- Early access: Join betas and try new features before anyone else.
+- Custom development: Complex integrations and migrations, built together with your team.
+- Volume pricing: Negotiated rates for brands moving serious subscription volume.
 - Free to install
 - No monthly fee, no per-order fee
-- Free assisted migration
 - Billed in USD by Shopify, on your store invoice
 
-Example: with $150K/mo in subscriptions you’re on Start and pay $1,500/mo. With $1M/mo you’re on Growth and pay $7,500/mo.
+Running serious volume or a business model that doesn’t fit the mold? Tell us how it works and we’ll shape Enterprise around it.
 
-Large or B2B operation? We offer managed services with dedicated onboarding, a success manager and an SLA, under a separate contract. Book a demo
+Get started
 
-Who it’s for
+## Install today. Migration is on us.
 
-## Digitally native brands built on repeat purchases.
-
-For DNVBs on Shopify that track LTV, cohort churn and CAC payback, and want an on-brand portal with subscriber data under their own control.
-- **Coffee club** — Frequency matched to each subscriber’s consumption.
-- **Supplements** — Monthly kits at subscriber pricing.
-- **Beauty and refills** — Automatic refills at the pace of use.
-- **Pet** — Food and treats before the bag runs out.
-- **B2B suppliers** — Recurring orders from customers who buy online.
+30-day pilot with free migration. Install on Shopify
 
 FAQ
 
 ## Frequently asked questions
 
+What is Everni?
+
+Everni is a native Shopify app for subscriptions and recurring billing. It handles subscription plans, automated billing, failed payment recovery, a self-serve customer portal and recurring revenue analytics for B2C, D2C and B2B brands.
+
 Does Everni run inside Shopify?
 
 Yes. Plans, billing and payments run natively on Shopify, and your subscribers buy through your store’s checkout.
+
+How much does Everni cost?
+
+Free to install, then 1% of monthly subscription GMV, with no monthly fee and no per-order fee; billed in USD through Shopify. High-volume brands can talk to us about Enterprise, with negotiated rates.
+
+What does Enterprise add?
+
+Everything in Growth, plus 24/7 support, a dedicated success manager, direct input on the roadmap, early access to new features, custom development and volume pricing.
 
 How does the 30-day pilot work?
 
@@ -611,19 +707,9 @@ What happens when a payment is declined?
 
 Everni retries the charge on scheduled dates and notifies the subscriber with a link to update their card. Pause, skip and product swap are available in the portal before cancellation.
 
-How much does Everni cost?
+Which payment gateways does Everni support?
 
-1% of monthly subscription GMV up to $500K, 0.75% from $500K to $2.5M and 0.5% above that. No monthly fee and no per-order fee; billed in USD through Shopify.
-
-Does Everni work with Brazilian payment providers?
-
-Yes. Stone, our official partner, is already available on Everni. Mercado Pago, PagBank, Cielo, Getnet, Barte and other providers available on Shopify are in the queue. Talk to us to prioritize yours.
-
-Get started
-
-## Install today. Migration is on us.
-
-30-day pilot with free migration. Install on Shopify
+Shopify Payments, Stripe, PayPal and Authorize.net today, through Shopify’s native subscription engine. More gateways are in the works; talk to us to prioritize yours.
 
 ## Talk to Everni
 

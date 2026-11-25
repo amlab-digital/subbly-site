@@ -2,7 +2,7 @@
 .mk000{min-height: clamp(380px, 30vw, 440px); box-sizing: border-box; padding: clamp(20px, 3vw, 48px); background: #F4F3F0; display: flex; align-items: center; justify-content: center}
 .mk001{width: 100%; max-width: 360px; box-sizing: border-box; padding: 20px; background: #FFFFFF; border: 1px solid #E7E5E1; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 18px 40px rgba(24, 24, 24, 0.08)}
 .mk002{display: flex; align-items: center; gap: 12px}
-.mk003{width: 52px; height: 52px; flex-shrink: 0; object-fit: cover; object-position: 78% 30%; background: #EDEBE6; display: block}
+.mk003{width: 52px; height: 52px; flex-shrink: 0; object-fit: contain; background: #FFFFFF; display: block}
 .mk004{display: flex; flex-direction: column; min-width: 0}
 .mk005{font-size: 14px; line-height: 20px; font-weight: 500}
 .mk006{font-size: 13px; line-height: 18px; color: #5C5C5A}
@@ -50,7 +50,7 @@
 .mk048{width: 24px; height: 19px; display: block}
 .mk049{font-size: 19px; line-height: 26px; color: #181818}
 .mk050{display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 16px; background: #FFFFFF; color: #181818}
-.mk051{width: 38px; height: 38px; flex-shrink: 0; border-radius: 8px; object-fit: cover; object-position: 78% 30%; background: #EDEBE6; display: block}
+.mk051{width: 38px; height: 38px; flex-shrink: 0; border-radius: 8px; object-fit: contain; background: #FFFFFF; display: block}
 .mk052{display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0}
 .mk053{font-size: 12px; line-height: 16px; color: #5C5C5A}
 .mk054{display: flex; align-items: flex-end; justify-content: space-between; padding: 10px 12px; border-radius: 10px; background: #F4F3F0}

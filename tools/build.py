@@ -12,7 +12,7 @@ import shutil
 from pathlib import Path
 
 from content_home import HOME
-from content_pages import ABOUT, COMPANY, PRIVACY, TERMS, UPDATED
+from content_pages import ABOUT, COMPANY, PRIVACY, PRIVACY_COOKIES_GTM, TERMS, UPDATED
 
 HERE = Path(__file__).resolve().parent
 DOCS = HERE.parent / "docs"
@@ -21,25 +21,31 @@ DOCS = HERE.parent / "docs"
 # CONFIGURAÇÃO GERAL — tudo que muda com frequência está aqui
 # =============================================================================
 SITE = "https://geteverni.com"
+# Data da última alteração de conteúdo da home (sitemap, dateModified, llms-full.txt)
+SITE_UPDATED = "2026-11-25"
 EMAIL = "contato@amlab.com.br"
-PHONE = "+55 19 99910-3480"
+PHONE = "+55 11 95506-1996"  # WhatsApp Business da Everni
 INSTALL = {"pt": "https://apps.shopify.com/subbly-subscriptions-app?locale=pt-BR",
            "en": "https://apps.shopify.com/subbly-subscriptions-app?locale=en"}
-WHATSAPP = {"pt": "https://wa.me/5519999103480?text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20como%20posso%20gerenciar%20melhor%20minhas%20assinaturas%20com%20a%20EVERNI.",
-            "en": "https://wa.me/5519999103480?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions."}
+WHATSAPP = {"pt": "https://wa.me/5511955061996?text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20como%20posso%20gerenciar%20melhor%20minhas%20assinaturas%20com%20a%20EVERNI.",
+            "en": "https://wa.me/5511955061996?text=Hi%2C%20I%27d%20like%20to%20learn%20how%20Everni%20can%20help%20me%20manage%20my%20subscriptions."}
 LINKEDIN = "https://www.linkedin.com/company/everni-official/"
 AMLAB = "https://amlab.com.br"
 # Formulário de novidades: crie um formulário grátis em https://formspree.io e troque SEU_FORM_ID.
 # Enquanto não trocar, o botão abre o app de e-mail do visitante (fallback automático).
 FORM_ENDPOINT = "https://formspree.io/f/SEU_FORM_ID"
 
-# PREÇOS (faixas por volume: a taxa da faixa vale para todo o GMV do mês)
+# GOOGLE TAG MANAGER — cole o ID do container (ex.: "GTM-ABC1234") e rode o build.
+# Vazio = nenhum script de medição é carregado e a Política de Privacidade continua dizendo que o site não usa cookies.
+# Preenchido = carrega o GTM com Consent Mode v2 (negado por padrão na UE/Reino Unido/Suíça), libera os domínios do Google
+# na CSP e troca a seção de cookies da Política de Privacidade pelo texto de medição (revise com o jurídico).
+GTM_ID = ""
+
+# PREÇOS — plano único Growth (taxa sobre o GMV mensal de assinaturas) + Enterprise sob consulta.
+# Mudou a taxa? Troque "rate": hero, tabela comparativa, FAQ, JSON-LD, calculadora, montanha e llms.txt acompanham.
 PRICING = [
-    {"name": "Start", "rate": 0.01, "max": 500_000},
-    {"name": "Growth", "rate": 0.0075, "max": 2_500_000},
-    {"name": "Scale", "rate": 0.005, "max": None},
+    {"name": "Growth", "rate": 0.01, "max": None},
 ]
-PRICING_EXAMPLES = (150_000, 1_000_000)
 # Calculadora: degraus do controle deslizante (GMV mensal em USD), posição inicial e tickets
 CALC_STEPS = [5000, 10000, 20000, 30000, 40000, 50000, 75000, 100000, 150000, 200000, 300000, 400000, 500000,
               750000, 1000000, 1500000, 2000000, 2500000, 3000000, 5000000, 7500000, 10000000]
@@ -54,18 +60,24 @@ ROUTES = {
 LOCALE = {"pt": "pt-BR", "en": "en"}
 OG_LOCALE = {"pt": "pt_BR", "en": "en_US"}
 
-CSP = ("default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; "
-       "connect-src 'self' https://api.country.is https://ipapi.co https://formspree.io; "
-       "form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; manifest-src 'self'; "
-       "upgrade-insecure-requests")
+def csp():
+    gtm = bool(GTM_ID)
+    g_script = " https://www.googletagmanager.com" if gtm else ""
+    g_img = " https://www.googletagmanager.com https://*.google-analytics.com https://*.g.doubleclick.net https://*.google.com" if gtm else ""
+    g_conn = " https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net" if gtm else ""
+    g_frame = "frame-src https://www.googletagmanager.com; " if gtm else ""
+    return ("default-src 'self'; script-src 'self'" + g_script + "; style-src 'self'; img-src 'self' data:" + g_img + "; font-src 'self'; "
+            "connect-src 'self' https://api.country.is https://ipapi.co https://formspree.io" + g_conn + "; " + g_frame +
+            "form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; manifest-src 'self'; "
+            "upgrade-insecure-requests")
 
 UI = {
     "pt": {"skip": "Pular para o conteúdo", "home_label": "Everni, página inicial", "nav_label": "Principal",
            "menu": "Menu", "lang_label": "Idioma", "install": "Instalar", "install_full": "Instalar na Shopify",
            "other_lang_aria": "English version", "home": "Início", "updated": "Última atualização",
-           "docs_label": "Documentos legais", "breadcrumb": "Você está aqui",
-           "nav": [("Como funciona", "product"), ("Quanto custa", "calc"), ("Migração", "migration"),
-                   ("Integrações", "integrations"), ("Preços", "pricing"), ("FAQ", "faq")],
+           "docs_label": "Documentos legais", "breadcrumb": "Você está aqui", "demo": "Agendar demo",
+           "nav": [("Como funciona", "product"), ("Para quem é", "who"), ("Quanto custa", "calc"), ("Integrações", "integrations"),
+                   ("Migração", "migration"), ("Preços", "pricing"), ("FAQ", "faq")],
            "footer": {"tag": "Subscription platform", "blurb": "Assinaturas na Shopify, sem mensalidade e com provedores de pagamento locais.",
                       "label": "Rodapé", "platform": "Plataforma",
                       "platform_links": ["Planos de assinatura", "Cobrança recorrente", "Retenção", "Portal do assinante", "Relatórios"],
@@ -77,9 +89,9 @@ UI = {
     "en": {"skip": "Skip to content", "home_label": "Everni, home page", "nav_label": "Main",
            "menu": "Menu", "lang_label": "Language", "install": "Install", "install_full": "Install on Shopify",
            "other_lang_aria": "Versão em português", "home": "Home", "updated": "Last updated",
-           "docs_label": "Legal documents", "breadcrumb": "You are here",
-           "nav": [("How it works", "product"), ("Savings", "calc"), ("Migration", "migration"),
-                   ("Integrations", "integrations"), ("Pricing", "pricing"), ("FAQ", "faq")],
+           "docs_label": "Legal documents", "breadcrumb": "You are here", "demo": "Book a demo",
+           "nav": [("How it works", "product"), ("Who it’s for", "who"), ("Savings", "calc"), ("Integrations", "integrations"),
+                   ("Migration", "migration"), ("Pricing", "pricing"), ("FAQ", "faq")],
            "footer": {"tag": "Subscription platform", "blurb": "Subscriptions for Shopify brands. No monthly fee, local payment providers.",
                       "label": "Footer", "platform": "Platform",
                       "platform_links": ["Subscription plans", "Recurring billing", "Retention", "Subscriber portal", "Reports"],
@@ -128,25 +140,13 @@ def tier_for(gmv):
     return PRICING[-1]
 
 
-def tier_range(i, lang):
-    t, prev = PRICING[i], (PRICING[i - 1] if i else None)
-    if lang == "pt":
-        if prev is None:
-            return f"até {money_short(t['max'], lang)}/mês em assinaturas"
-        if t["max"] is None:
-            return f"acima de {money_short(prev['max'], lang)}/mês"
-        return f"de {money_short(prev['max'], lang)} a {money_short(t['max'], lang)}/mês"
-    if prev is None:
-        return f"up to {money_short(t['max'], lang)}/mo in subscriptions"
-    if t["max"] is None:
-        return f"above {money_short(prev['max'], lang)}/mo"
-    return f"{money_short(prev['max'], lang)} to {money_short(t['max'], lang)}/mo"
-
-
 def price_vars(lang):
-    r = [pct(t["rate"], lang) for t in PRICING]
-    m = [money_short(t["max"], lang) for t in PRICING if t["max"]]
-    return {"r1": r[0], "r2": r[1], "r3": r[2], "m1": m[0], "m2": m[1]}
+    """Variáveis de preço usadas nos textos: {rate} = taxa do plano Growth."""
+    return {"rate": pct(PRICING[0]["rate"], lang)}
+
+
+def fill_price(s, lang):
+    return s.format(**price_vars(lang))
 
 
 def url(lang, key, anchor=None):
@@ -201,28 +201,30 @@ def website_ld():
 
 
 def app_ld(lang):
-    pv = price_vars(lang)
-    desc = HOME[lang]["description"]
-    tiers_txt = "; ".join(f"{t['name']}: {pct(t['rate'], lang)} ({tier_range(i, lang)})" for i, t in enumerate(PRICING))
+    c = HOME[lang]
+    rate = price_vars(lang)["rate"]
+    pr = c["pricing"]
+    offer_desc = (f"Instalação gratuita. Plano Growth: {rate} do GMV mensal de assinaturas, sem mensalidade e sem taxa por pedido, cobrado em USD pela Shopify. "
+                  "Plano Enterprise com condições negociadas para operações de alto volume." if lang == "pt" else
+                  f"Free to install. Growth plan: {rate} of monthly subscription GMV, no monthly fee and no per-order fee, billed in USD through Shopify. "
+                  "Enterprise plan with negotiated rates for high-volume brands.")
     return {
-        "@type": "SoftwareApplication", "@id": SITE + "/#app", "name": "Everni",
+        "@type": "SoftwareApplication", "@id": SITE + ROUTES["home"][lang] + "#app", "name": "Everni",
         "applicationCategory": "BusinessApplication", "applicationSubCategory": "Subscription management",
         "operatingSystem": "Web (Shopify Admin)", "url": SITE + ROUTES["home"][lang], "installUrl": INSTALL[lang],
-        "description": desc, "inLanguage": ["pt-BR", "en"], "publisher": {"@id": SITE + "/#org"},
+        "description": c["description"], "inLanguage": LOCALE[lang], "publisher": {"@id": SITE + "/#org"},
         "image": SITE + f"/assets/img/og-{lang}.jpg",
-        "featureList": [p[0] for p in HOME[lang]["product"]["panels"]],
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock",
-                   "url": INSTALL[lang],
-                   "description": ("Instalação gratuita. Taxa de uso sobre o GMV mensal de assinaturas — " if lang == "pt" else
-                                   "Free to install. Usage fee on monthly subscription GMV — ") + tiers_txt},
+        "featureList": pr["growth"]["features"] + pr["growth"]["service"],
+        "audience": {"@type": "BusinessAudience", "audienceType": "Shopify merchants (DNVBs, B2C, D2C and B2B)"},
+        "offers": {"@type": "Offer", "name": pr["growth"]["name"], "price": "0", "priceCurrency": "USD",
+                   "availability": "https://schema.org/InStock", "url": INSTALL[lang], "description": offer_desc},
     }
 
 
 def faq_ld(lang):
-    pv = price_vars(lang)
     return {"@type": "FAQPage", "@id": SITE + ROUTES["home"][lang] + "#faq-ld", "inLanguage": LOCALE[lang],
             "mainEntity": [{"@type": "Question", "name": q,
-                            "acceptedAnswer": {"@type": "Answer", "text": a.format(**pv)}} for q, a in HOME[lang]["faq"]["items"]]}
+                            "acceptedAnswer": {"@type": "Answer", "text": fill_price(a, lang)}} for q, a in HOME[lang]["faq"]["items"]]}
 
 
 def breadcrumb_ld(lang, key, name):
@@ -234,8 +236,8 @@ def breadcrumb_ld(lang, key, name):
 def webpage_ld(lang, key, title, desc, ptype="WebPage", crumb=None):
     d = {"@type": ptype, "@id": SITE + ROUTES[key][lang] + "#webpage", "url": SITE + ROUTES[key][lang], "name": title,
          "description": desc, "inLanguage": LOCALE[lang], "isPartOf": {"@id": SITE + "/#website"},
-         "about": {"@id": SITE + "/#app"}, "publisher": {"@id": SITE + "/#org"},
-         "dateModified": UPDATED["iso"], "primaryImageOfPage": SITE + f"/assets/img/og-{lang}.jpg"}
+         "about": {"@id": SITE + ROUTES["home"][lang] + "#app"}, "publisher": {"@id": SITE + "/#org"},
+         "dateModified": SITE_UPDATED if key == "home" else UPDATED["iso"], "primaryImageOfPage": SITE + f"/assets/img/og-{lang}.jpg"}
     if crumb:
         d["breadcrumb"] = {"@id": SITE + ROUTES[key][lang] + "#breadcrumb"}
     return d
@@ -264,7 +266,7 @@ def head(lang, key, title, desc, graph, preload="", robots="index, follow, max-i
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="{CSP}">
+<meta http-equiv="Content-Security-Policy" content="{csp()}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
@@ -305,10 +307,25 @@ def head(lang, key, title, desc, graph, preload="", robots="index, follow, max-i
 <link rel="preload" href="/assets/fonts/montserrat-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 {preload}
 <link rel="stylesheet" href="/assets/css/everni.css?v={v}">
-<script src="/assets/js/lang.js?v={v}"></script>
+{gtm_head()}<script src="/assets/js/lang.js?v={v}"></script>
 <script src="/assets/js/site.js?v={v}" defer></script>
 {ld_script(graph)}
 </head>"""
+
+
+def gtm_head():
+    """Carrega o Google Tag Manager (com Consent Mode v2) só quando GTM_ID estiver preenchido."""
+    if not GTM_ID:
+        return ""
+    return (f'<link rel="preconnect" href="https://www.googletagmanager.com">\n'
+            f'<script src="/assets/js/gtm.js?v={asset_version()}" data-gtm-id="{e(GTM_ID)}"></script>\n')
+
+
+def gtm_body():
+    if not GTM_ID:
+        return ""
+    return (f'<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={e(GTM_ID)}" height="0" width="0" '
+            f'hidden title="Google Tag Manager"></iframe></noscript>\n')
 
 
 def header(lang, key):
@@ -332,6 +349,7 @@ def header(lang, key):
 <nav id="site-nav" class="site-nav" aria-label="{t['nav_label']}">
 <ul>{nav}</ul>
 <a class="btn btn--dark btn--block site-nav__cta" href="{INSTALL[lang]}" target="_blank" rel="noopener">{t['install_full']}</a>
+<a class="btn btn--outline btn--block site-nav__cta" href="{WHATSAPP[lang]}" target="_blank" rel="noopener" data-track="demo">{t['demo']}</a>
 </nav>
 <div class="header-actions">
 <nav class="lang-switch" aria-label="{t['lang_label']}">{switch}</nav>
@@ -379,7 +397,7 @@ def page(lang, key, title, desc, graph, main_html, preload="", robots=None):
     h = head(lang, key, title, desc, graph, preload, **({"robots": robots} if robots else {}))
     return f"""{h}
 <body>
-{header(lang, key)}
+{gtm_body()}{header(lang, key)}
 <main id="conteudo" tabindex="-1">
 {main_html}
 </main>
@@ -411,7 +429,8 @@ def picture(name, widths, alt, cls="", sizes="100vw", loading="lazy", fetchprior
 # =============================================================================
 def sec_head(eyebrow, h2, hid, lead=None):
     lead_html = f'<p class="lead">{lead}</p>' if lead else ""
-    return f'<div class="sec-head reveal"><p class="eyebrow">{e(eyebrow)}</p><h2 class="h2" id="{hid}">{e(h2)}</h2>{lead_html}</div>'
+    eb = f'<p class="eyebrow">{e(eyebrow)}</p>' if eyebrow else ""
+    return f'<div class="sec-head reveal">{eb}<h2 class="h2" id="{hid}">{e(h2)}</h2>{lead_html}</div>'
 
 
 def s_hero(lang, c):
@@ -421,7 +440,7 @@ def s_hero(lang, c):
     strip = "".join(f'<span class="brand-name">{e(x)}</span>' for x in hh["strip"])
     pic = picture("everest-violeta", [1024], hh["img_alt"], loading=None, fetchpriority="high", w=1024, h=682)
     return f"""<section class="hero on-dark" id="{ids['top']}" aria-labelledby="hero-titulo">
-<div class="hero__media parallax"><div class="hero__frame">{pic}<div class="hero__peak" aria-hidden="true"><span>EVERNI</span><img src="/assets/img/logo-everni.svg" alt="" width="80" height="76"></div></div></div>
+<div class="hero__media parallax"><div class="hero__frame">{pic}</div></div>
 <div class="hero__shade" aria-hidden="true"></div>
 <div class="hero__content">
 <h1 id="hero-titulo">{e(hh['h1a'])}<span>{e(hh['h1b'])}</span></h1>
@@ -432,13 +451,34 @@ def s_hero(lang, c):
 </section>"""
 
 
+def s_relationship(lang, c):
+    r = c["relationship"]
+    return f"""<section class="section rel" id="{c['ids']['relationship']}" aria-labelledby="relacao-titulo">
+<div class="wrap rel__grid reveal"><h2 class="rel__h" id="relacao-titulo">{e(r['h2'])}</h2><p class="rel__p">{e(r['p'])}</p></div>
+</section>"""
+
+
+ICON_X = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>'
+ICON_OK = '<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
+
+
 def s_problem(lang, c):
+    """Quadro comparativo 'Hoje x Com a Everni' como <table> semântica (vira cartões no celular)."""
     p = c["problem"]
-    cards = "".join(f'<li class="card-line reveal"><span class="num" aria-hidden="true">0{i + 1}</span><h3>{e(h)}</h3><p>{e(t)}</p></li>'
-                    for i, (h, t) in enumerate(p["cards"]))
-    return f"""<section class="section section--line" id="{c['ids']['problem']}" aria-labelledby="problema-titulo">
-<div class="wrap">{sec_head(p['eyebrow'], p['h2'], 'problema-titulo')}
-<ol class="cards-3" role="list">{cards}</ol>
+    c1, c2, c3 = p["cols"]
+    rows = "".join(
+        f'<tr class="reveal"><th scope="row">{e(topic)}</th>'
+        f'<td class="cmp__today" data-label="{e(c2)}"><span class="cmp__ico" aria-hidden="true">{ICON_X}</span><div><span class="cmp__lbl" aria-hidden="true">{e(c2)}</span><p>{e(today)}</p></div></td>'
+        f'<td class="cmp__ev" data-label="{e(c3)}"><span class="cmp__ico" aria-hidden="true">{ICON_OK}</span><div><span class="cmp__lbl" aria-hidden="true">{e(c3)}</span><p>{e(fill_price(ev, lang))}</p></div></td></tr>'
+        for topic, today, ev in p["rows"])
+    return f"""<section class="section section--line cmp-sec" id="{c['ids']['problem']}" aria-labelledby="problema-titulo">
+<div class="wrap">
+<h2 class="visually-hidden" id="problema-titulo">{e(p['h2'])}</h2>
+<table class="cmp">
+<caption class="visually-hidden">{e(p['caption'])}</caption>
+<thead><tr><th scope="col">{e(c1)}</th><th scope="col">{e(c2)}</th><th scope="col" class="cmp__ev-head"><img src="/assets/img/logo-everni.svg" alt="" width="30" height="28">{e(c3)}</th></tr></thead>
+<tbody>{rows}</tbody>
+</table>
 <p class="closing reveal">{e(p['closing'])} <a class="link-u" href="#{c['ids']['product']}">{e(p['closing_link'])}</a></p>
 </div></section>"""
 
@@ -448,12 +488,13 @@ def s_who(lang, c):
     def seg(s, dup=False):
         slug, h, t, alt = s
         a = ' aria-hidden="true"' if dup else ""
-        return (f'<li class="seg{" seg--dup" if dup else ""}"{a}><img src="/assets/img/segmentos/{slug}.svg" alt="{"" if dup else e(alt)}" width="400" height="460" loading="lazy" decoding="async">'
-                f'<h3>{e(h)}</h3><p>{e(t)}</p></li>')
+        img = (f'<picture><source type="image/webp" srcset="/assets/img/segmentos/{slug}.webp">'
+               f'<img src="/assets/img/segmentos/{slug}.png" alt="{"" if dup else e(alt)}" width="400" height="370" loading="lazy" decoding="async"></picture>')
+        return f'<li class="seg{" seg--dup" if dup else ""}"{a}>{img}<h3>{e(h)}</h3><p>{e(t)}</p></li>'
     items = "".join(seg(s) for s in w["segments"]) + "".join(seg(s, True) for s in w["segments"])
-    return f"""<section class="section" id="{c['ids']['who']}" aria-labelledby="para-quem-titulo">
+    return f"""<section class="section section--line" id="{c['ids']['who']}" aria-labelledby="para-quem-titulo">
 <div class="wrap">{sec_head(w['eyebrow'], w['h2'], 'para-quem-titulo', e(w['lead']))}</div>
-<div class="marquee reveal" tabindex="0" role="region" aria-label="{'Segmentos atendidos' if lang == 'pt' else 'Industries served'}"><ul class="marquee__track" role="list">{items}</ul></div>
+<div class="marquee reveal" tabindex="0" role="region" aria-label="{e(w['region'])}"><ul class="marquee__track" role="list">{items}</ul></div>
 </section>"""
 
 
@@ -465,7 +506,7 @@ def calc_default(lang, c):
     comps = [{"name": x["name"], "formula": x["formula"], "cost": x["fixed"] + gmv * x["pct"] + orders * x["perOrder"], "ev": False}
              for x in c["calc"]["competitors"]]
     js = c["calc"]["js"]
-    rows = comps + [{"name": "Everni", "formula": js["everniFormula"].replace("{tier}", t["name"]).replace("{rate}", pct(t["rate"], lang)), "cost": ev, "ev": True}]
+    rows = comps + [{"name": "Everni", "formula": js["everniFormula"].replace("{rate}", pct(t["rate"], lang)), "cost": ev, "ev": True}]
     rows.sort(key=lambda r: -r["cost"])
     mx = rows[0]["cost"]
     costs = [x["cost"] for x in comps]
@@ -486,7 +527,7 @@ def s_calc(lang, c):
     cfg = {"locale": LOCALE[lang], "steps": CALC_STEPS, "t": k["js"], "competitors": k["competitors"],
            "tiers": [{"name": t["name"], "rate": t["rate"], "max": t["max"], "label": pct(t["rate"], lang)} for t in PRICING]}
     chips = "".join(f'<button type="button" class="chip" data-v="{v}" aria-pressed="{"true" if v == CALC_TICKET_START else "false"}">{k["js"]["cur"]}{v}</button>' for v in CALC_TICKETS)
-    note = e(k["save_note"]).replace("{pct}", f'<span id="calc-pct">{d["pct"]}</span>').replace("{tier}", f'<span id="calc-tier">{d["tier"]}</span>').replace("{rate}", f'<span id="calc-rate">{d["rate"]}</span>')
+    note = e(k["save_note"]).replace("{pct}", f'<span id="calc-pct">{d["pct"]}</span>').replace("{rate}", f'<span id="calc-rate">{d["rate"]}</span>')
     return f"""<section class="section section--sand section--line" id="{c['ids']['calc']}" aria-labelledby="calc-titulo">
 <div class="wrap">{sec_head(k['eyebrow'], k['h2'], 'calc-titulo', e(k['lead']))}
 <div class="calc reveal" id="calc" data-config="{e(json.dumps(cfg, ensure_ascii=False))}">
@@ -539,8 +580,7 @@ ROUTE_D = {
 
 def s_climb(lang, c):
     m = c["climb"]
-    pv = price_vars(lang)
-    steps = [(k, t, d.format(**pv)) for k, t, d in m["steps"]]
+    steps = [(k, t, fill_price(d, lang)) for k, t, d in m["steps"]]
     wps = "".join(f"""<div class="wp wp--{i + 1}{' is-on' if i == 0 else ''}{' is-next' if i == 1 else ''}">
 <button type="button" class="wp__btn" aria-label="{i + 1}. {e(t)} · {e(k)}" aria-pressed="{'true' if i == 0 else 'false'}" aria-describedby="wp-d{i + 1}"><span class="wp__ping" aria-hidden="true"></span><span class="wp__sq" aria-hidden="true"></span></button>
 <span class="wp__tag" aria-hidden="true">0{i + 1}</span>
@@ -590,30 +630,40 @@ def s_migration(lang, c):
 
 def s_integrations(lang, c):
     g = c["integrations"]
-    feat = "".join(f'<li class="provider{" provider--featured" if f else ""}"><span class="n">{e(n)}</span><span class="s">{e(s)}</span></li>' for n, s, f in g["featured"])
+    feat = "".join(f'<li class="provider"><img src="/assets/img/logos/{f}" alt="{e(n)}" width="{w}" height="{h}" loading="lazy" decoding="async"></li>'
+                   for n, f, w, h in g["featured"])
     groups = "".join(f'<div><h3>{e(h)}</h3><ul class="tags" role="list">{"".join(f"<li>{e(x)}</li>" for x in items)}</ul></div>' for h, items in g["groups"])
     return f"""<section class="section section--line" id="{c['ids']['integrations']}" aria-labelledby="integracoes-titulo">
-<div class="wrap">{sec_head(g['eyebrow'], g['h2'], 'integracoes-titulo', e(g['lead']))}
-<ul class="providers reveal" role="list">{feat}</ul>
+<div class="wrap"><div class="sec-head reveal"><h2 class="eyebrow eyebrow--h" id="integracoes-titulo">{e(g['h2'])}</h2><p class="lead lead--strong">{e(g['lead'])}</p></div>
+<ul class="providers reveal" role="list" aria-label="{e(g['list_label'])}">{feat}</ul>
 <details class="more reveal"><summary>{e(g['more'])}<span class="see" aria-hidden="true">{e(g['see'])}</span></summary>
 <div class="more__body">{groups}<p>{g['other'].format(wa=e(WHATSAPP[lang]))}</p><p class="fine">{e(g['fine'])}</p></div></details>
 </div></section>"""
 
 
 def s_pricing(lang, c):
+    """Dois planos: Growth (taxa única) e Enterprise (sob medida). Cada plano é um <article> com a lista do que inclui."""
     p = c["pricing"]
-    tiers = "".join(f'<li class="tier{" tier--featured" if i == 0 else ""}"><span class="name">{t["name"]}</span><span class="rate">{pct(t["rate"], lang)}</span><span class="range">{tier_range(i, lang)}</span></li>'
-                    for i, t in enumerate(PRICING))
-    g1, g2 = PRICING_EXAMPLES
-    t1, t2 = tier_for(g1), tier_for(g2)
-    ex = p["example"].format(g1=money_short(g1, lang), t1=t1["name"], c1=money(g1 * t1["rate"], lang),
-                             g2=money_short(g2, lang), t2=t2["name"], c2=money(g2 * t2["rate"], lang))
-    checks = "".join(f"<li>{e(x)}</li>" for x in p["checks"])
+    g, en = p["growth"], p["enterprise"]
+    rate = price_vars(lang)["rate"]
+    li = lambda x: f"<li>{e(x)}</li>"
+    g_body = (f'<p class="plan__head">{e(g["head"])}</p><ul class="checks" role="list">{"".join(li(x) for x in g["features"])}</ul>'
+              f'<ul class="checks plan__service" role="list">{"".join(li(x) for x in g["service"])}</ul>')
+    e_body = (f'<p class="plan__head">{e(en["head"])}</p><ul class="checks checks--rich" role="list">'
+              + "".join(f'<li><span><strong>{e(t)}<span class="visually-hidden">:</span></strong> <span>{e(d)}</span></span></li>' for t, d in en["features"]) + "</ul>")
+    growth = f"""<article class="plan plan--featured" aria-labelledby="plano-growth">
+<header class="plan__top"><h3 class="plan__name" id="plano-growth">{e(g['name'])}</h3><p class="plan__price">{rate}</p><p class="plan__sub">{e(g['sub'])}</p>
+<a class="btn btn--dark btn--block" href="{INSTALL[lang]}" target="_blank" rel="noopener">{e(g['btn'])}</a></header>
+<div class="plan__body">{g_body}</div></article>"""
+    ent = f"""<article class="plan plan--ent" aria-labelledby="plano-enterprise">
+<header class="plan__top"><h3 class="plan__name" id="plano-enterprise">{e(en['name'])}</h3><p class="plan__price">{e(en['price'])}</p><p class="plan__sub">{e(en['sub'])}</p>
+<a class="btn btn--outline btn--block" href="{e(WHATSAPP[lang])}" target="_blank" rel="noopener" data-track="enterprise">{e(en['btn'])}</a></header>
+<div class="plan__body">{e_body}</div></article>"""
+    strip = "".join(li(x) for x in p["strip"])
     return f"""<section class="section section--line" id="{c['ids']['pricing']}" aria-labelledby="precos-titulo">
-<div class="wrap">{sec_head(p['eyebrow'], p['h2'], 'precos-titulo', e(p['lead']))}
-<ul class="tiers reveal" role="list">{tiers}</ul>
-<div class="price-foot reveal"><ul class="checks" role="list">{checks}</ul>
-<div><p>{ex}</p><p>{e(p['managed'])}</p>{ext_link(WHATSAPP[lang], e(p['demo']), 'btn btn--outline')}</div></div>
+<div class="wrap">{sec_head(p['eyebrow'], p['h2'], 'precos-titulo', e(fill_price(p['lead'], lang)))}
+<div class="plans reveal">{growth}{ent}</div>
+<div class="price-strip reveal"><ul class="checks checks--row" role="list">{strip}</ul><p>{e(p['note'])}</p></div>
 </div></section>"""
 
 
@@ -635,8 +685,7 @@ def s_cta(lang, c, data=None, hid="cta-titulo"):
 
 def s_faq(lang, c):
     f = c["faq"]
-    pv = price_vars(lang)
-    items = "".join(f'<details class="faq__item"{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(a.format(**pv))}</p></details>'
+    items = "".join(f'<details class="faq__item"{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(fill_price(a, lang))}</p></details>'
                     for i, (q, a) in enumerate(f["items"]))
     return f"""<section class="section" id="{c['ids']['faq']}" aria-labelledby="faq-titulo">
 <div class="wrap faq reveal">
@@ -668,7 +717,7 @@ def s_contact(lang, c):
 </div></section>"""
 
 
-SECTIONS = {"problem": s_problem, "who": s_who, "calc": s_calc, "product": s_product, "climb": s_climb,
+SECTIONS = {"relationship": s_relationship, "problem": s_problem, "who": s_who, "calc": s_calc, "product": s_product, "climb": s_climb,
             "migration": s_migration, "integrations": s_integrations, "pricing": s_pricing, "cta": s_cta,
             "faq": s_faq, "contact": s_contact}
 
@@ -816,7 +865,7 @@ def sitemap():
         for lang in ("pt", "en"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{h}" href="{abs_url(ROUTES[key][l])}"/>'
                            for h, l in (("pt-BR", "pt"), ("en", "en"), ("x-default", "en")))
-            urls.append(f"<url><loc>{abs_url(ROUTES[key][lang])}</loc><lastmod>{UPDATED['iso']}</lastmod>"
+            urls.append(f"<url><loc>{abs_url(ROUTES[key][lang])}</loc><lastmod>{SITE_UPDATED if key == 'home' else UPDATED['iso']}</lastmod>"
                         f"<changefreq>{'weekly' if key == 'home' else 'yearly'}</changefreq><priority>{prio[key]}</priority>{alts}</url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
             'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(urls) + "\n</urlset>\n")
@@ -853,13 +902,14 @@ Sitemap: {SITE}/sitemap.xml
 
 class _Text(__import__("html.parser").parser.HTMLParser):
     """Converte o <main> gerado em Markdown simples para o llms-full.txt."""
-    SKIP = {"script", "style", "svg", "button", "figure", "form", "nav", "input"}
+    SKIP = {"script", "style", "svg", "button", "figure", "form", "nav", "input", "caption", "thead"}
     INLINE = {"span", "a", "div", "output", "label", "time", "strong", "em", "b"}
 
     def __init__(self):
         super().__init__()
         self.out, self.skip, self.stack, self.li = [], 0, [], 0
         self.li_fresh = False
+        self.tbl = 0
 
     def _sep(self):
         if self.out and not self.out[-1].endswith((" ", "\n")):
@@ -876,7 +926,17 @@ class _Text(__import__("html.parser").parser.HTMLParser):
             return
         if self.skip:
             return
-        if tag == "li":
+        if tag == "table":
+            self.tbl += 1
+        elif self.tbl and tag == "p":
+            self._sep()
+        elif tag == "tr":
+            self.out.append("\n- ")
+        elif tag == "th" and a.get("scope") == "row":
+            self.out.append("**")
+        elif tag == "td":
+            self.out.append(" — " + (a.get("data-label") + ": " if a.get("data-label") else ""))
+        elif tag == "li":
             self.li += 1
             self.out.append("\n- ")
             self.li_fresh = True
@@ -903,6 +963,10 @@ class _Text(__import__("html.parser").parser.HTMLParser):
             if sk:
                 self.skip -= 1
             elif not self.skip:
+                if t == "th":
+                    self.out.append("**")
+                if t == "table":
+                    self.tbl -= 1
                 if t == "li":
                     self.li -= 1
                 elif t == "h3" and self.li:
@@ -923,7 +987,7 @@ class _Text(__import__("html.parser").parser.HTMLParser):
         t = "".join(self.out)
         t = re.sub(r"[ \t]+", " ", t)
         t = re.sub(r" *\n *", "\n", t)
-        t = t.replace("**—", "** —")
+        t = t.replace("**—", "** —").replace(" :", ":")
         return re.sub(r"\n{3,}", "\n\n", t).strip()
 
 
@@ -935,23 +999,33 @@ def main_text(page_html):
 
 
 def llms_txt():
-    pv_pt, pv_en = price_vars("pt"), price_vars("en")
+    r_pt, r_en = price_vars("pt")["rate"], price_vars("en")["rate"]
+    feats_en = "; ".join(HOME["en"]["pricing"]["growth"]["features"])
+    ent_en = "; ".join(t for t, _ in HOME["en"]["pricing"]["enterprise"]["features"])
     return f"""# Everni
 
-> Everni is a native Shopify app for subscriptions and recurring billing, built in Brazil (B2C, D2C and B2B). It covers subscription plans, recurring billing, failed-payment retries and retention, a self-service subscriber portal and recurring revenue reports. Pricing: free to install, no monthly fee and no per-order fee; usage fee of {pv_en['r1']} of monthly subscription GMV up to {pv_en['m1']}, {pv_en['r2']} from {pv_en['m1']} to {pv_en['m2']} and {pv_en['r3']} above, billed in USD through Shopify. Free assisted migration from Recharge, Skio, other apps or spreadsheets, with a 30-day pilot.
+> Everni is a native Shopify app for subscriptions and recurring billing, built in Brazil (B2C, D2C and B2B). It covers subscription plans, recurring billing, failed payment recovery and retention, a self-serve customer portal and recurring revenue analytics. Pricing: free to install, then a flat {r_en} of monthly subscription GMV on the Growth plan, with no monthly fee and no per-order fee, billed in USD through Shopify. An Enterprise plan with negotiated rates is available for high-volume brands. Free assisted migration from Recharge, Skio, other apps or spreadsheets, with a 30-day pilot.
 
-Everni é um app de assinaturas e cobrança recorrente nativo da Shopify, feito no Brasil. Instalação gratuita, sem mensalidade e sem taxa por pedido: {pv_pt['r1']} do GMV mensal de assinaturas até {pv_pt['m1']}, {pv_pt['r2']} de {pv_pt['m1']} a {pv_pt['m2']} e {pv_pt['r3']} acima. Parceira oficial no Brasil: Stone. Também integra Barte, Stripe, PayPal, Shopify Payments e Authorize.net.
+Everni é um app de assinaturas e cobrança recorrente nativo da Shopify, feito no Brasil. Instalação gratuita e plano Growth com taxa única de {r_pt} do GMV mensal de assinaturas, sem mensalidade e sem taxa por pedido; plano Enterprise com condições negociadas para alto volume. Parceira oficial no Brasil: Stone. Também integra Barte, Stripe, PayPal, Shopify Payments e Authorize.net.
+
+## Key facts
+- Plans: Growth ({r_en} of monthly subscription GMV, free to install, no monthly fee, no per-order fee) and Enterprise (custom pricing).
+- Growth includes: {feats_en}.
+- Enterprise adds: {ent_en}.
+- Payment providers: Shopify Payments, Stripe, PayPal and Authorize.net (US, Canada, Europe); Stone (official partner) and Barte (Brazil).
+- Migration: free and assisted, from Recharge, Skio, other apps or spreadsheets, with a 30-day pilot.
+- Last updated: {SITE_UPDATED}.
 
 Company: {COMPANY['legal_name']} (CNPJ {COMPANY['cnpj']}), {COMPANY['street']}, {COMPANY['city']}/{COMPANY['region']}, Brazil. Developed by AM Lab ({AMLAB}). Contact: {EMAIL} · WhatsApp {PHONE}.
 
 ## Pages (English)
-- [Home]({SITE}/en/): product overview, savings calculator vs Recharge and Skio, how it works, migration, integrations, pricing, FAQ
+- [Home]({SITE}/en/): product overview, comparison, how it works, industries, savings calculator vs Recharge and Skio, integrations, migration, pricing (Growth and Enterprise), FAQ
 - [About]({SITE}/en/about/): story, mission, vision and values
 - [Terms of use]({SITE}/en/terms-of-use/)
 - [Privacy policy]({SITE}/en/privacy-policy/)
 
 ## Páginas (Português)
-- [Início]({SITE}/): visão geral, calculadora, como funciona, migração, integrações, preços, FAQ
+- [Início]({SITE}/): visão geral, comparativo, como funciona, segmentos, calculadora, integrações, migração, preços (Growth e Enterprise), FAQ
 - [Sobre nós]({SITE}/sobre-nos/)
 - [Termos de uso]({SITE}/termos-de-uso/)
 - [Política de privacidade]({SITE}/politica-de-privacidade/)
@@ -993,7 +1067,7 @@ Contato: {EMAIL}
 Local: Americana/SP, Brasil
 
 /* SITE */
-Última atualização: {UPDATED['iso']}
+Última atualização: {SITE_UPDATED}
 Padrões: HTML5, CSS3, JavaScript sem dependências, Schema.org (JSON-LD)
 Fontes: Montserrat, JetBrains Mono (auto-hospedadas, SIL OFL)
 """
@@ -1032,13 +1106,21 @@ def main():
     write("assets/css/everni.css", minify_css(css))
     write("assets/js/lang.js", minify_js((HERE / "src" / "lang.js").read_text()))
     write("assets/js/site.js", minify_js((HERE / "src" / "site.js").read_text()))
+    gtm_file = DOCS / "assets/js/gtm.js"
+    if GTM_ID:
+        write("assets/js/gtm.js", minify_js((HERE / "src" / "gtm.js").read_text()))
+    elif gtm_file.exists():
+        gtm_file.unlink()
 
     pages = {}
     for lang in ("pt", "en"):
         pages[ROUTES["home"][lang]] = build_home(lang)
         pages[ROUTES["about"][lang]] = build_about(lang)
         pages[ROUTES["terms"][lang]] = legal_page(lang, "terms", TERMS[lang])
-        pages[ROUTES["privacy"][lang]] = legal_page(lang, "privacy", PRIVACY[lang])
+        priv = PRIVACY[lang]
+        if GTM_ID:  # com medição ativa, a seção de cookies passa a descrever o GTM/Analytics
+            priv = dict(priv, clauses=[PRIVACY_COOKIES_GTM[lang] if t.startswith("Cookies") else (t, b) for t, b in priv["clauses"]])
+        pages[ROUTES["privacy"][lang]] = legal_page(lang, "privacy", priv)
     for route, content in pages.items():
         write(route + "index.html", content)
     write("404.html", build_404())
@@ -1046,7 +1128,7 @@ def main():
     write("sitemap.xml", sitemap())
     write("robots.txt", ROBOTS)
     write("llms.txt", llms_txt())
-    full = ["# Everni — full site content (PT-BR + EN)\n", f"Source: {SITE} · Last updated {UPDATED['iso']}\n"]
+    full = ["# Everni — full site content (PT-BR + EN)\n", f"Source: {SITE} · Last updated {SITE_UPDATED}\n"]
     for route in ["/", "/sobre-nos/", "/termos-de-uso/", "/politica-de-privacidade/", "/en/", "/en/about/", "/en/terms-of-use/", "/en/privacy-policy/"]:
         full.append(f"\n\n---\n\nURL: {SITE}{route}\n\n" + main_text(pages[route]))
     write("llms-full.txt", "".join(full) + "\n")

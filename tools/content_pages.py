@@ -187,3 +187,20 @@ PRIVACY = {
         "callout": ("Questions about privacy?", "Write to our data protection officer: <a href=\"mailto:{email}\">{email}</a>", "Read the Terms of Use"),
     },
 }
+
+# Seção de cookies usada SOMENTE quando GTM_ID estiver preenchido em build.py
+# (substitui a seção "Cookies…" acima). Revise com o jurídico e atualize UPDATED antes de ativar o GTM.
+PRIVACY_COOKIES_GTM = {
+    "pt": ("Cookies, Medição e Idioma", [
+        ("p", "Este site usa o Google Tag Manager e o Google Analytics para medir visitas e cliques (por exemplo, em “Instalar na Shopify”) e melhorar o conteúdo. Essas ferramentas podem gravar cookies e coletar dados técnicos do navegador, como páginas visitadas, origem do acesso, tipo de dispositivo e um identificador aleatório. Não usamos esses dados para identificar você pessoalmente nem os vendemos a terceiros."),
+        ("p", "Para visitantes do Espaço Econômico Europeu, do Reino Unido e da Suíça, a medição só é ativada com consentimento. Você pode bloquear ou apagar cookies nas configurações do seu navegador a qualquer momento."),
+        ("p", "O site também usa o armazenamento local do navegador para lembrar o idioma escolhido e o país detectado, como descrito na seção 2. Para escolher o idioma manualmente, use o seletor PT/EN no topo da página."),
+        ("p", "O painel administrativo da Everni usa apenas cookies essenciais, necessários para autenticação e funcionamento. O widget exibido na loja segue as configurações de cookies da própria loja."),
+    ]),
+    "en": ("Cookies, Analytics and Language", [
+        ("p", "This website uses Google Tag Manager and Google Analytics to measure visits and clicks (for example, on “Install on Shopify”) and improve our content. These tools may set cookies and collect technical browser data, such as pages visited, traffic source, device type and a random identifier. We do not use this data to identify you personally and we do not sell it to third parties."),
+        ("p", "For visitors in the European Economic Area, the United Kingdom and Switzerland, analytics only run with consent. You can block or delete cookies in your browser settings at any time."),
+        ("p", "The website also uses your browser’s local storage to remember the language you chose and the detected country, as described in section 2. To choose the language manually, use the PT/EN switch at the top of the page."),
+        ("p", "The Everni admin uses only essential cookies, required for authentication and operation. The widget shown in the store follows the store’s own cookie settings."),
+    ]),
+}

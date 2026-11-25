@@ -13,8 +13,8 @@ LOGO = (DOCS / "assets/img/logo-everni.svg").as_uri()
 FONT = (DOCS / "assets/fonts/montserrat-var-latin.woff2").as_uri()
 
 TEXT = {
-    "pt": ("Toda a sua recorrência.", "Uma só plataforma.", "App de assinaturas nativo da Shopify · feito no Brasil", "Sem mensalidade · de 1% a 0,5% do GMV"),
-    "en": ("Every subscription.", "One platform.", "Native subscriptions app for Shopify", "No monthly fee · from 1% to 0.5% of GMV"),
+    "pt": ("Receita Recorrente", "em uma só plataforma.", "App de assinaturas nativo da Shopify · feito no Brasil", "Sem mensalidade · 1% do GMV"),
+    "en": ("Every subscription.", "One platform.", "Native subscriptions app for Shopify", "No monthly fee · flat 1% of GMV"),
 }
 
 TPL = """<!DOCTYPE html><html><head><style>
