@@ -88,6 +88,12 @@ button { cursor: pointer; }
 .section { position: relative; padding-block: clamp(56px, 7vw, 104px); }
 .section--sand { background: var(--sand); }
 .section--line { border-top: 1px solid var(--line); }
+.section--who { background: #2B0F67; }
+.section--who .eyebrow { color: rgba(254, 254, 254, .72); }
+.section--who .h2 { color: #FFFFFF; }
+.section--who .lead { color: rgba(254, 254, 254, .85); }
+.section--who .seg h3 { color: #FFFFFF; }
+.section--who .seg p { color: rgba(254, 254, 254, .78); }
 .stack { display: flex; flex-direction: column; }
 .sec-head { display: flex; flex-direction: column; gap: 16px; max-width: 760px; }
 .wrap > .sec-head { margin-bottom: clamp(32px, 4vw, 44px); }

@@ -501,7 +501,7 @@ def s_who(lang, c):
                f'<img src="/assets/img/segmentos/{slug}.png" alt="{"" if dup else e(alt)}" width="400" height="370" loading="lazy" decoding="async"></picture>')
         return f'<li class="seg{" seg--dup" if dup else ""}"{a}>{img}<h3>{e(h)}</h3><p>{e(t)}</p></li>'
     items = "".join(seg(s) for s in w["segments"]) + "".join(seg(s, True) for s in w["segments"])
-    return f"""<section class="section section--line" id="{c['ids']['who']}" aria-labelledby="para-quem-titulo">
+    return f"""<section class="section section--who" id="{c['ids']['who']}" aria-labelledby="para-quem-titulo">
 <div class="wrap">{sec_head(w['eyebrow'], w['h2'], 'para-quem-titulo', e(w['lead']))}</div>
 <div class="marquee reveal" tabindex="0" role="region" aria-label="{e(w['region'])}"><ul class="marquee__track" role="list">{items}</ul></div>
 </section>"""
