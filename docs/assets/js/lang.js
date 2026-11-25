@@ -1,4 +1,4 @@
-/*! Everni · seleção automática de idioma (PT-BR para Brasil e Portugal; EN para o resto)
+/*! Everni · seleção automática de idioma (PT-BR para países lusófonos; EN para o resto)
 * Carregado no <head> (síncrono e pequeno) para redirecionar antes da página pintar quando possível.
 * Ordem de decisão:
 *   1. ?lang=pt|en na URL  -> força e salva a escolha
@@ -12,12 +12,14 @@
 "use strict";
 var d = document.documentElement;
 d.className = d.className.replace(/\bno-js\b/, "js");
-var PT_COUNTRIES = { BR: 1, PT: 1 };
+var PT_COUNTRIES = { BR: 1, PT: 1, AO: 1, MZ: 1, CV: 1, GW: 1, ST: 1, TL: 1, GQ: 1, MO: 1 };
 var PT_ZONES = [
 "America/Sao_Paulo", "America/Araguaina", "America/Bahia", "America/Belem", "America/Boa_Vista",
 "America/Campo_Grande", "America/Cuiaba", "America/Eirunepe", "America/Fortaleza", "America/Maceio",
 "America/Manaus", "America/Noronha", "America/Porto_Velho", "America/Recife", "America/Rio_Branco",
-"America/Santarem", "Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"
+"America/Santarem", "Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores",
+"Africa/Luanda", "Africa/Maputo", "Atlantic/Cape_Verde", "Africa/Bissau", "Africa/Sao_Tome",
+"Asia/Dili", "Africa/Malabo", "Asia/Macau"
 ];
 var GEO_TTL = 30 * 24 * 3600 * 1000;
 var TIMEOUT = 1500;
