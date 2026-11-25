@@ -297,12 +297,12 @@ def head(lang, key, title, desc, graph, preload="", robots="index, follow, max-i
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{og_img}">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5205B2">
+<link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png?v=2" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-16x16.png?v=2" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" sizes="180x180">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#5205B2">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="msapplication-TileColor" content="#181818">
 <meta name="msapplication-config" content="/browserconfig.xml">
